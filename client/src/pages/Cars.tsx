@@ -33,11 +33,11 @@ export default function Cars() {
               Choose from our wide range of well-maintained vehicles for your comfortable journey across the mountains.
             </motion.p>
           </div>
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button variant="outline" className="gap-2 border-primary/20 text-primary hover:bg-primary/5">
               View Rental Terms <ArrowRight size={16} />
             </Button>
-          </div>
+          </div> */}
         </div>
 
         {/* Content */}

@@ -13,8 +13,8 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Call Us Now",
-      value: "+91 98765 43210",
-      action: "tel:+919876543210",
+      value: "+91 7780902344",
+      action: "tel:+917780902344",
       color: "bg-blue-100 text-blue-600",
       delay: 0.1
     },
@@ -22,15 +22,15 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
       icon: <MessageCircle className="h-6 w-6" />,
       label: "WhatsApp",
       value: "Chat on WhatsApp",
-      action: "https://wa.me/919876543210",
+      action: "https://wa.me/7780902344",
       color: "bg-green-100 text-green-600",
       delay: 0.2
     },
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email Us",
-      value: "bookings@kashmirtravels.com",
-      action: "mailto:bookings@kashmirtravels.com",
+      value: "bookings@visitkashmirtours.com",
+      action: "mailto:bookings@visitkashmirtours.com",
       color: "bg-orange-100 text-orange-600",
       delay: 0.3
     }
@@ -88,7 +88,7 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
         </div>
         
         <div className="p-4 bg-gray-50 text-center text-xs text-muted-foreground border-t">
-          Typically replies within 15 minutes
+          Typically replies within 30 minutes
         </div>
       </DialogContent>
     </Dialog>

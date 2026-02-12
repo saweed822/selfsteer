@@ -14,7 +14,7 @@ export function Footer() {
                 <Mountain size={24} className="text-white" />
               </div>
               <span className="text-xl font-display font-bold">
-                Kashmir<span className="text-accent">Travels</span>
+                Visit<span className="text-accent">Kashmir</span>
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
@@ -33,12 +33,17 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 font-display">Explore</h4>
             <ul className="space-y-4 text-slate-400">
-              {['Home', 'Tour Packages', 'Car Rentals', 'About Kashmir'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-accent transition-colors flex items-center gap-2 group">
+              {[
+                { name: 'Home', href: '/' },
+                { name: 'Tour Packages', href: '/tours' },
+                { name: 'Car Rentals', href: '/cars' },
+                { name: 'About Kashmir', href: '/about' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="hover:text-accent transition-colors flex items-center gap-2 group">
                     <span className="w-1.5 h-1.5 bg-slate-700 rounded-full group-hover:bg-accent transition-colors" />
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -48,11 +53,16 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6 font-display">Company</h4>
             <ul className="space-y-4 text-slate-400">
-              {['About Us', 'Terms & Conditions', 'Privacy Policy', 'Cancellation Policy'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="hover:text-accent transition-colors">
-                    {item}
-                  </a>
+              {[
+                { name: 'About Us', href: '/about-us' },
+                { name: 'Terms & Conditions', href: '/terms' },
+                { name: 'Privacy Policy', href: '/privacy' },
+                { name: 'Cancellation Policy', href: '/cancellation' }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="hover:text-accent transition-colors">
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -64,22 +74,22 @@ export function Footer() {
             <ul className="space-y-6 text-slate-400">
               <li className="flex items-start gap-4">
                 <MapPin className="text-accent shrink-0 mt-1" size={20} />
-                <span>Boulevard Road, Dal Gate,<br />Srinagar, Kashmir 190001</span>
+                <span>Koramangala<br />Bangalore, 560034</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="text-accent shrink-0" size={20} />
-                <span>+91 98765 43210</span>
+                <span>+91 7780902344</span>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="text-accent shrink-0" size={20} />
-                <span>hello@kashmirtravels.com</span>
+                <span>hello@visitkashmir.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Kashmir Travels. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Visit Kashmir Tour & Travels. All rights reserved.</p>
           <p>Designed with ❤️ for the Mountains</p>
         </div>
       </div>

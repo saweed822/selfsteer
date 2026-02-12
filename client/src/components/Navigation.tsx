@@ -44,7 +44,7 @@ export function Navigation() {
               <Mountain size={24} strokeWidth={2.5} />
             </div>
             <span className={`text-xl font-display font-bold tracking-tight ${location === '/' && !isScrolled ? 'text-white text-shadow' : 'text-primary'}`}>
-              Kashmir<span className="text-accent">Travels</span>
+              Visit<span className="text-accent">Kashmir</span> <br /> Tour & Travels
             </span>
           </Link>
 
