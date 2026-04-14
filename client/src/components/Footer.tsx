@@ -14,7 +14,7 @@ export function Footer() {
                 <Mountain size={24} className="text-white" />
               </div>
               <span className="text-xl font-display font-bold">
-                Visit<span className="text-accent">Kashmir</span>
+                Self<span className="text-accent">Steer</span>
               </span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
@@ -68,18 +68,18 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="text-accent shrink-0" size={20} />
-                <span>+91 7780902344</span>
+                <span>+91 9622002626</span>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="text-accent shrink-0" size={20} />
-                <span>hello@visitkashmir.com</span>
+                <span>saweed007@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>© {new Date().getFullYear()} Visit Kashmir Tour & Travels. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Self Steer Car Rentals. All rights reserved.</p>
           <p>Designed with ❤️ for the Mountains</p>
         </div>
       </div>
