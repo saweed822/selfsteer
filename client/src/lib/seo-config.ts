@@ -1,4 +1,4 @@
-export const SITE_NAME = "Visit Kashmir Tour & Travels";
+export const SITE_NAME = "Self Steer Car Rentals Kashmir";
 
 export const DEFAULT_DESCRIPTION =
   "Premium Kashmir tour packages and car rentals. Curated travel experiences, comfortable fleet, and 24/7 support for your journey through the valleys.";
