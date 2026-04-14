@@ -9,6 +9,7 @@ import Tours from "@/pages/Tours";
 import Cars from "@/pages/Cars";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { OrganizationJsonLd } from "@/components/Seo";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <OrganizationJsonLd />
         <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-grow">

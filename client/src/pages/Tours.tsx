@@ -5,6 +5,7 @@ import { Check, Star, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactModal } from "@/components/ContactModal";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Seo } from "@/components/Seo";
 
 export default function Tours() {
   const { data: packages, isLoading, isError } = usePackages();
@@ -28,6 +29,11 @@ export default function Tours() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white pt-24 pb-16">
+      <Seo
+        title="Kashmir Tour Packages"
+        description="Browse silver, gold, and platinum Kashmir travel packages with curated itineraries, comfortable stays, and guided local experiences."
+        path="/tours"
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Header */}

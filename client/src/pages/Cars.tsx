@@ -5,6 +5,7 @@ import { Fuel, Users, Gauge, ArrowRight, Info } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ContactModal } from "@/components/ContactModal";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Seo } from "@/components/Seo";
 
 export default function Cars() {
   const { data: cars, isLoading, isError } = useCars();
@@ -12,6 +13,11 @@ export default function Cars() {
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
+      <Seo
+        title="Kashmir Car Rentals"
+        description="Compare our Kashmir rental fleet including SUVs and hatchbacks with transparent day rates for local and outstation travel."
+        path="/cars"
+      />
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Header */}

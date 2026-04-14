@@ -1,10 +1,16 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { ArrowRight, Mountain, Car } from "lucide-react";
+import { Seo } from "@/components/Seo";
 
 export default function Home() {
   return (
     <div className="min-h-screen relative overflow-hidden flex flex-col md:flex-row">
+      <Seo
+        title="Kashmir Tours & Car Rentals"
+        description="Discover premium Kashmir tour packages and reliable car rentals for Srinagar, Gulmarg, and Pahalgam adventures."
+        path="/"
+      />
       
       {/* SECTION 1: TOURS */}
       <motion.div 
