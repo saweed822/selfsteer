@@ -13,8 +13,8 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Call Us Now",
-      value: "+91 7780902344",
-      action: "tel:+917780902344",
+      value: "+91 9622002626",
+      action: "tel:+919622002626",
       color: "bg-blue-100 text-blue-600",
       delay: 0.1
     },
@@ -22,15 +22,15 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
       icon: <MessageCircle className="h-6 w-6" />,
       label: "WhatsApp",
       value: "Chat on WhatsApp",
-      action: "https://wa.me/7780902344",
+      action: "https://wa.me/7006730743",
       color: "bg-green-100 text-green-600",
       delay: 0.2
     },
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email Us",
-      value: "bookings@visitkashmirtours.com",
-      action: "mailto:bookings@visitkashmirtours.com",
+      value: "saweed007@gmail.com",
+      action: "mailto:saweed007@gmail.com",
       color: "bg-orange-100 text-orange-600",
       delay: 0.3
     }
