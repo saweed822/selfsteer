@@ -1,26 +1,28 @@
-import { pgTable, text, serial, integer } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
-import { z } from "zod";
+import { z } from 'zod';
 
-export const packages = pgTable("packages", {
-  id: serial("id").primaryKey(),
-  name: text("name").notNull(), // Silver, Gold, Platinum
-  description: text("description").notNull(),
-  features: text("features").array().notNull(), // List of features
-  badge: text("badge").notNull(), // silver, gold, platinum
+// Type definitions for Tour Packages
+export const packageSchema = z.object({
+  id: z.number(),
+  name: z.string(),
+  description: z.string(),
+  features: z.array(z.string()),
+  badge: z.string(),
 });
 
-export const cars = pgTable("cars", {
-  id: serial("id").primaryKey(),
-  name: text("name").notNull(), // New Scorpio, Hyundai i20, etc.
-  type: text("type").notNull(), // SUV, Hatchback
-  pricePerDay: text("price_per_day").notNull(), // Storing as text for formatting flexibility e.g. "₹3000"
-  discountTag: text("discount_tag"), // e.g. "10% OFF"
-  imageUrl: text("image_url").notNull(), // Placeholder or real URL
+export type Package = z.infer<typeof packageSchema>;
+
+// Type definitions for Cars
+export const carSchema = z.object({
+  id: z.number(),
+  name: z.string(),
+  type: z.string(),
+  pricePerDay: z.string(),
+  discountTag: z.string().nullable(),
+  imageUrl: z.string(),
 });
 
-export const insertPackageSchema = createInsertSchema(packages);
-export const insertCarSchema = createInsertSchema(cars);
+export type Car = z.infer<typeof carSchema>;
 
-export type Package = typeof packages.$inferSelect;
-export type Car = typeof cars.$inferSelect;
+// Insert schemas for creating new records
+export const insertPackageSchema = packageSchema.omit({ id: true });
+export const insertCarSchema = carSchema.omit({ id: true });

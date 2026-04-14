@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mountain, Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
+import { Mountain, MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -20,13 +20,13 @@ export function Footer() {
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Your premium gateway to the paradise on earth. Offering curated tours and luxury fleet rentals for an unforgettable experience.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               {[Facebook, Instagram, Twitter].map((Icon, i) => (
                 <a key={i} href="#" className="p-2 bg-white/5 rounded-full hover:bg-accent hover:text-slate-900 transition-all">
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}

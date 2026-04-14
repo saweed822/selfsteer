@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { packages, cars } from './schema';
+import { packageSchema, carSchema } from './schema';
 
 export const api = {
   packages: {
@@ -7,7 +7,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/packages' as const,
       responses: {
-        200: z.array(z.custom<typeof packages.$inferSelect>()),
+        200: z.array(packageSchema),
       },
     },
   },
@@ -16,7 +16,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/cars' as const,
       responses: {
-        200: z.array(z.custom<typeof cars.$inferSelect>()),
+        200: z.array(carSchema),
       },
     },
   },
