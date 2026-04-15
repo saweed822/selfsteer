@@ -11,11 +11,11 @@ export const carsData: Car[] = [
   },
   {
     id: 2,
-    name: "New Scorpio N",
+    name: "New Scorpio N 4WD",
     type: "SUV",
-    pricePerDay: "₹4,000",
+    pricePerDay: "₹9,000",
     discountTag: "10% OFF",
-    imageUrl: "/Users/savi/Downloads/Secure-Asset-Manager/client/public/Scorpio N Snapchat.jpeg"
+    imageUrl: "https://images.unsplash.com/photo-1633596683562-4a4697de837a?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 3,
