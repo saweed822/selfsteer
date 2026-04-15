@@ -15,7 +15,7 @@ export const carsData: Car[] = [
     type: "SUV",
     pricePerDay: "₹9,000",
     discountTag: "10% OFF",
-    imageUrl: "https://images.unsplash.com/photo-1633596683562-4a4697de837a?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "../../public/scorpio.jpeg"
   },
   {
     id: 3,
