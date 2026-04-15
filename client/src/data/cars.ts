@@ -15,22 +15,30 @@ export const carsData: Car[] = [
     type: "SUV",
     pricePerDay: "₹4,000",
     discountTag: "10% OFF",
-    imageUrl: "https://images.unsplash.com/photo-1633596683562-4a4697de837a?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "/Users/savi/Downloads/Secure-Asset-Manager/client/public/Scorpio N Snapchat.jpeg"
   },
   {
     id: 3,
     name: "Hyundai i20",
     type: "Hatchback",
-    pricePerDay: "₹2,500",
-    discountTag: null,
+    pricePerDay: "₹3,500",
+    discountTag: "Budget Pick",
     imageUrl: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 4,
     name: "Maruti Swift",
     type: "Hatchback",
-    pricePerDay: "₹2,200",
+    pricePerDay: "₹3,500",
     discountTag: "Budget Pick",
     imageUrl: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    id: 1,
+    name: "Jeep Compass",
+    type: "SUV",
+    pricePerDay: "₹8,000",
+    discountTag: "Popular",
+    imageUrl: "https://images.unsplash.com/photo-1632245889029-e412c63fe26e?q=80&w=800&auto=format&fit=crop"
   }
 ];
