@@ -14,7 +14,7 @@ export default function Cars() {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <Seo
-        title="Kashmir Car Rentals"
+        title="Self Steer Car Rentals"
         description="Compare our Kashmir rental fleet including SUVs and hatchbacks with transparent day rates for local and outstation travel."
         path="/cars"
       />

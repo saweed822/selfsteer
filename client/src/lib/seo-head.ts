@@ -50,7 +50,7 @@ export function applySeoHead(input: SeoHeadInput) {
   upsertMeta("property", "og:type", ogType);
   upsertMeta("property", "og:image", ogImage);
   upsertMeta("property", "og:locale", "en_IN");
-  upsertMeta("property", "og:site_name", "Visit Kashmir Tour & Travels");
+  upsertMeta("property", "og:site_name", "Self Steer Car Rentals Kashmir");
   upsertLinkRel("canonical", canonicalUrl);
 }
 
@@ -60,12 +60,12 @@ export function setOrganizationJsonLd(siteUrl: string) {
   const payload = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Visit Kashmir Tour & Travels",
+    name: "Self Steer Car Rentals Kashmir",
     description:
       "Kashmir tour packages and premium car rentals for travelers exploring Srinagar, Gulmarg, Pahalgam, and beyond.",
     url: siteUrl || undefined,
-    telephone: "+91-7780902344",
-    email: "hello@visitkashmir.com",
+    telephone: "+91-9622002626",
+    email: "saweed007@gmail.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Koramangala",

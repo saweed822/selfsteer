@@ -26,7 +26,7 @@ export function Seo({
 }: SeoProps) {
   const fullTitle =
     path === "/"
-      ? `${SITE_NAME} | Kashmir Tours & Car Rentals`
+      ? `${SITE_NAME} | Self Steer Car Rentals`
       : `${title} | ${SITE_NAME}`;
 
   useEffect(() => {
