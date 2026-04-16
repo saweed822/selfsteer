@@ -1,4 +1,4 @@
-# Visit Kashmir Tours & Travels
+# SelfSteer & Travels
 
 ## Overview
 A modern, premium tourism website for "Visit Kashmir Tours & Travels". The site features a split hero section for Tour Packages and Car Rentals, detailed package and car listings, and a contact-only booking flow.
