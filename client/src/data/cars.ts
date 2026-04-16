@@ -8,7 +8,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹8,499",
     originalPricePerDay: "₹10,999",
     discountTag: "Popular",
-    imageUrl: "../../public/images/roxx.avif"
+    imageUrl: "/Images/roxx.avif"
    },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹8,499",
     originalPricePerDay: "₹11,499",
     discountTag: "Popular",
-    imageUrl: "../../public/images/scorpioN.avif"
+    imageUrl: "/Images/scorpioN.avif"
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹3,499",
     originalPricePerDay: "₹4,999",
     discountTag: "Budget Pick",
-    imageUrl: "../../public/images/i20.jpg"
+    imageUrl: "/Images/i20.jpg"
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹11,999",
     originalPricePerDay: "₹14,999",
     discountTag: "Luxury",
-    imageUrl: "../../public/images/fortuner.avif"
+    imageUrl: "/Images/fortuner.avif"
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹7,999",
     originalPricePerDay: "₹11,499",
     discountTag: "Popular",
-    imageUrl: "../../public/images/jeep.webp"
+    imageUrl: "/Images/jeep.webp"
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹3,499",
     originalPricePerDay: "₹4,999",
     discountTag: "Budget Pick",
-    imageUrl: "../../public/images/swift.jpg"
+    imageUrl: "/Images/swift.jpg"
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹5,499",
     originalPricePerDay: "₹6,999",
     discountTag: "Popular",
-    imageUrl: "../../public/images/seltos.avif",
+    imageUrl: "/Images/seltos.avif",
     },
   {
     id: 8,
@@ -71,7 +71,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹3,999",
     originalPricePerDay: "₹5,999",
     discountTag: "Budget Pick",
-    imageUrl: "../../public/images/kylaq.jpg"
+    imageUrl: "/Images/kylaq.jpg"
    },
   {
     id: 1,
@@ -80,7 +80,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹4,499",
     originalPricePerDay: "₹6,999",
     discountTag: "Popular",
-    imageUrl: "../../public/images/thar.avif"
+    imageUrl: "/Images/thar.avif"
   },
   {
     id: 10,
@@ -89,7 +89,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹4,499",
     originalPricePerDay: "₹5,999",
     discountTag: "25%",
-    imageUrl: "../../public/images/xuv500.jpg"  
+    imageUrl: "/Images/xuv500.jpg"  
   },
   // {
   //   id: 11,
@@ -98,6 +98,6 @@ export const carsData: Car[] = [
   //   pricePerDay: "₹2,499",
   //   originalPricePerDay: "₹4,999",
   //   discountTag: "50%",
-  //   imageUrl: "../../public/images/aveo.avif"  
+  //   imageUrl: "/Images/aveo.avif"  
   // }
 ];
