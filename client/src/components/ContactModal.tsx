@@ -29,8 +29,8 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email Us",
-      value: "saweed007@gmail.com",
-      action: "mailto:saweed007@gmail.com",
+      value: "selfsteer07@gmail.com",
+      action: "mailto:selfsteer07@gmail.com",
       color: "bg-orange-100 text-orange-600",
       delay: 0.3
     }

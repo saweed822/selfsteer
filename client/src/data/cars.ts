@@ -68,7 +68,7 @@ export const carsData: Car[] = [
     id: 8,
     name: "Skoda Kylaq",
     type: "SUV",
-    pricePerDay: "₹4,999",
+    pricePerDay: "₹3,999",
     originalPricePerDay: "₹5,999",
     discountTag: "Budget Pick",
     imageUrl: "../../public/images/kylaq.jpg"
@@ -77,7 +77,7 @@ export const carsData: Car[] = [
     id: 1,
     name: "Mahindra Thar",
     type: "Offroad SUV",
-    pricePerDay: "₹4,999",
+    pricePerDay: "₹4,499",
     originalPricePerDay: "₹6,999",
     discountTag: "Popular",
     imageUrl: "../../public/images/thar.avif"

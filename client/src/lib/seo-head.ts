@@ -65,7 +65,7 @@ export function setOrganizationJsonLd(siteUrl: string) {
       "Kashmir tour packages and premium car rentals for travelers exploring Srinagar, Gulmarg, Pahalgam, and beyond.",
     url: siteUrl || undefined,
     telephone: "+91-9622002626",
-    email: "saweed007@gmail.com",
+    email: "selfsteer07@gmail.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Koramangala",
