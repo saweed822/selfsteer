@@ -17,6 +17,7 @@ export const carSchema = z.object({
   name: z.string(),
   type: z.string(),
   pricePerDay: z.string(),
+  originalPricePerDay: z.string().optional(),
   discountTag: z.string().nullable(),
   imageUrl: z.string(),
 });

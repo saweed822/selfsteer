@@ -1,5 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Phone, Mail, MessageCircle, X } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ContactModalProps {
@@ -37,17 +37,8 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
   ];
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="sm:max-w-md bg-white/95 backdrop-blur-xl border-none shadow-2xl p-0 overflow-hidden">
-        <div className="absolute right-4 top-4 z-10">
-          <button 
-            onClick={onClose}
-            className="rounded-full p-2 bg-black/5 hover:bg-black/10 transition-colors"
-          >
-            <X className="h-4 w-4 text-gray-500" />
-          </button>
-        </div>
-        
         <div className="bg-primary p-8 text-center relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
           <DialogHeader>

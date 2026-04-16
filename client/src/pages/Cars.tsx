@@ -117,7 +117,16 @@ export default function Cars() {
                   <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between gap-4">
                     <div className="flex flex-col">
                       <span className="text-xs text-muted-foreground font-medium uppercase tracking-wide">Starting at</span>
-                      <span className="text-lg font-bold text-primary">{car.pricePerDay}<span className="text-xs font-normal text-gray-500">/day</span></span>
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <span className="text-lg font-bold text-primary">
+                          {car.pricePerDay}<span className="text-xs font-normal text-gray-500">/day</span>
+                        </span>
+                        {car.originalPricePerDay && (
+                          <span className="text-sm font-medium text-gray-400 line-through decoration-gray-400">
+                            {car.originalPricePerDay}<span className="text-xs font-normal">/day</span>
+                          </span>
+                        )}
+                      </div>
                     </div>
                     <Button 
                       onClick={() => setSelectedCar(car.name)}
