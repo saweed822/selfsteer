@@ -91,13 +91,13 @@ export const carsData: Car[] = [
     discountTag: "25%",
     imageUrl: "../../public/images/xuv500.jpg"  
   },
-  {
-    id: 11,
-    name: "Cheverolet Aveo",
-    type: "Sedan",
-    pricePerDay: "₹2,499",
-    originalPricePerDay: "₹4,999",
-    discountTag: "50%",
-    imageUrl: "../../public/images/aveo.avif"  
-  }
+  // {
+  //   id: 11,
+  //   name: "Cheverolet Aveo",
+  //   type: "Sedan",
+  //   pricePerDay: "₹2,499",
+  //   originalPricePerDay: "₹4,999",
+  //   discountTag: "50%",
+  //   imageUrl: "../../public/images/aveo.avif"  
+  // }
 ];
