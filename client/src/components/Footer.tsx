@@ -72,7 +72,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="text-accent shrink-0" size={20} />
-                <span>saweed007@gmail.com</span>
+                <span>selfsteer07@gmail.com</span>
               </li>
             </ul>
           </div>
