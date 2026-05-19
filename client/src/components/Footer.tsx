@@ -64,7 +64,7 @@ export function Footer() {
             <ul className="space-y-6 text-slate-400">
               <li className="flex items-start gap-4">
                 <MapPin className="text-accent shrink-0 mt-1" size={20} />
-                <span>Koramangala<br />Bangalore, 560034</span>
+                <span>Doodh Ganga Road, Karan Nagar, <br />Srinagar, Jammu and Kashmir - 190010</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="text-accent shrink-0" size={20} />

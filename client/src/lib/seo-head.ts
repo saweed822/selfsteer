@@ -68,10 +68,10 @@ export function setOrganizationJsonLd(siteUrl: string) {
     email: "selfsteer07@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Koramangala",
-      addressLocality: "Bangalore",
-      postalCode: "560034",
-      addressRegion: "Karnataka",
+      streetAddress: "Karan Nagar", 
+      addressLocality: "Srinagar",
+      postalCode: "190010",
+      addressRegion: "Jammu and Kashmir",
       addressCountry: "IN",
     },
     areaServed: {
