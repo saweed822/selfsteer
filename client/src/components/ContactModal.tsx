@@ -1,5 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { ArrowUpRight, Mail, MessageCircle, Phone, Sparkles, Clock3 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Clock3, Mail, MessageCircle, Phone, Sparkles, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ContactModalProps {
@@ -8,114 +9,147 @@ interface ContactModalProps {
   title?: string;
 }
 
-export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactModalProps) {
-  const contactOptions = [
+type ContactOption = {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  action: string;
+  shortLine: string;
+  buttonText: string;
+  accent: string;
+  buttonClass: string;
+  external: boolean;
+  delay: number;
+  highlight?: boolean;
+};
+
+export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: ContactModalProps) {
+  const contactOptions: ContactOption[] = [
     {
-      icon: <Phone className="h-6 w-6" />,
-      label: "Call Us Now",
+      icon: <Phone className="h-4 w-4 sm:h-5 sm:w-5" />,
+      label: "Call Us",
       value: "+91 9622002626",
       action: "tel:+919622002626",
-      color: "from-sky-100 to-blue-200 text-blue-700 ring-blue-200/60",
-      badge: "Fastest",
-      description: "Speak with our team directly for quick trip planning.",
+      shortLine: "Instant assistance",
+      buttonText: "Call Now",
+      accent: "from-sky-100 to-blue-200 text-blue-700 ring-blue-200/70",
+      buttonClass: "bg-slate-950 text-white hover:bg-slate-800",
       external: false,
-      delay: 0.1
+      delay: 0.05,
     },
     {
-      icon: <MessageCircle className="h-6 w-6" />,
+      icon: <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />,
       label: "WhatsApp",
-      value: "Chat on WhatsApp",
-      action: "https://wa.me/9622002626",
-      color: "from-emerald-100 to-green-200 text-emerald-700 ring-emerald-200/60",
-      badge: "Instant",
-      description: "Send your route, dates, or car choice and we’ll reply quickly.",
+      value: "Chat with us",
+      action: "https://wa.me/919622002626",
+      shortLine: "Fastest response",
+      buttonText: "Open WhatsApp",
+      accent: "from-emerald-100 to-green-200 text-emerald-700 ring-emerald-200/70",
+      buttonClass: "bg-emerald-500 text-white hover:bg-emerald-600",
       external: true,
-      delay: 0.2
+      delay: 0.1,
+      highlight: true,
     },
     {
-      icon: <Mail className="h-6 w-6" />,
-      label: "Email Us",
+      icon: <Mail className="h-4 w-4 sm:h-5 sm:w-5" />,
+      label: "Email",
       value: "selfsteer07@gmail.com",
       action: "mailto:selfsteer07@gmail.com",
-      color: "from-amber-100 to-orange-200 text-orange-700 ring-orange-200/60",
-      badge: "Best for details",
-      description: "Send itinerary changes or longer requests by email.",
+      shortLine: "Detailed requests",
+      buttonText: "Send Email",
+      accent: "from-amber-100 to-orange-200 text-orange-700 ring-orange-200/70",
+      buttonClass: "bg-white text-slate-900 hover:bg-slate-50 border border-slate-200",
       external: false,
-      delay: 0.3
-    }
+      delay: 0.15,
+    },
   ];
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-[36rem] lg:max-w-[40rem] w-[calc(100vw-1rem)] border-0 bg-slate-950 p-0 text-white shadow-[0_30px_80px_rgba(15,23,42,0.45)] overflow-hidden">
-        <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-5 pb-5 pt-5 sm:px-8 sm:pb-6 sm:pt-6 lg:px-10 lg:pb-7 lg:pt-7">
+      <DialogContent className="w-[calc(100vw-1rem)] max-w-[72rem] overflow-hidden border border-white/10 bg-slate-950 p-0 text-white shadow-[0_32px_90px_rgba(15,23,42,0.45)] sm:w-[calc(100vw-2rem)] sm:max-w-[72rem]">
+        <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6">
           <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.16)_1px,transparent_0)] [background-size:22px_22px]" />
-          <div className="absolute -right-10 top-4 h-28 w-28 rounded-full bg-cyan-400/20 blur-3xl" />
-          <div className="absolute -left-8 bottom-0 h-24 w-24 rounded-full bg-blue-400/20 blur-3xl" />
+          <div className="absolute -right-12 top-0 h-32 w-32 rounded-full bg-cyan-400/15 blur-3xl" />
+          <div className="absolute -left-12 bottom-0 h-32 w-32 rounded-full bg-blue-400/15 blur-3xl" />
 
-          <div className="relative z-10 flex items-start justify-between gap-4 pr-8">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100">
+          <div className="relative z-10 flex items-center justify-between gap-3">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-cyan-100 sm:text-[11px]">
               <Sparkles className="h-3.5 w-3.5" />
-              24/7 support
+              24/7 booking support
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/10 p-3 text-cyan-100 shadow-lg shadow-black/10">
-              <Clock3 className="h-5 w-5" />
+            <div className="rounded-2xl border border-white/10 bg-white/10 p-2.5 text-cyan-100 shadow-lg shadow-black/10 sm:p-3">
+              <Clock3 className="h-4 w-4 sm:h-5 sm:w-5" />
             </div>
           </div>
 
-          <DialogHeader className="relative z-10 mt-5 text-left sm:mt-6 lg:mt-7">
-            <DialogTitle className="text-2xl font-display font-bold tracking-tight text-white sm:text-4xl lg:text-[2.6rem]">
+          <DialogHeader className="relative z-10 mt-4 space-y-2 text-left sm:mt-5 lg:mt-6">
+            <DialogTitle className="text-2xl font-display font-semibold tracking-tight text-white sm:text-[2.3rem] lg:text-[2.6rem]">
               {title}
             </DialogTitle>
-            <p className="mt-2 max-w-xl text-xs leading-5 text-slate-200 sm:mt-3 sm:text-base sm:leading-6 lg:mt-4 lg:max-w-2xl lg:text-[0.95rem] lg:leading-6">
-              Reach out through the channel that feels easiest. We keep the response path short, direct, and booking-friendly.
+            <p className="max-w-2xl text-sm leading-6 text-slate-200 sm:text-[0.98rem] sm:leading-6">
+              Tell us your dates or route and we’ll help you book the right self-drive car fast.
             </p>
           </DialogHeader>
 
-          <div className="relative z-10 mt-4 flex flex-wrap gap-1.5 sm:mt-5 sm:gap-2 lg:mt-5">
+          <div className="relative z-10 mt-4 flex flex-wrap gap-2 sm:mt-5">
             <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
-              Quick callbacks
+              WhatsApp first
             </span>
             <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
-              WhatsApp replies first
+              Quick callback
             </span>
           </div>
         </div>
 
-        <div className="bg-gradient-to-b from-slate-50 to-white px-3 py-4 sm:px-5 sm:py-5 lg:px-6 lg:py-6">
-          <div className="grid gap-3 sm:grid-cols-2">
+        <div className="bg-gradient-to-b from-slate-50 to-white px-3 pb-4 pt-3 sm:px-4 sm:pb-5 sm:pt-4 lg:px-6 lg:pb-6 lg:pt-5">
+          <div className="grid gap-3 md:grid-cols-3 md:gap-4">
             {contactOptions.map((option) => (
-            <motion.a
-              key={option.label}
-              href={option.action}
-              target={option.external ? "_blank" : undefined}
-              rel={option.external ? "noopener noreferrer" : undefined}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: option.delay, duration: 0.3 }}
-              className={`group flex items-start gap-3 rounded-2xl border border-slate-200/80 bg-white px-3 py-3 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_16px_40px_rgba(15,23,42,0.10)] sm:gap-4 sm:px-4 sm:py-4 lg:gap-4 lg:px-5 lg:py-4 ${option.label === "Email Us" ? "sm:col-span-2" : ""}`}
-            >
-              <div className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${option.color} ring-1 transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:w-14 lg:h-14 lg:w-14`}>
-                {option.icon}
-              </div>
-              <div className="min-w-0 flex-1">
-                <div className="flex flex-wrap items-center gap-2">
-                  <p className="text-xs font-semibold tracking-wide text-slate-500 sm:text-sm">
-                    {option.label}
-                  </p>
-                  <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[9px] font-bold uppercase tracking-[0.18em] text-slate-500 sm:text-[10px] sm:tracking-[0.2em]">
-                    {option.badge}
-                  </span>
+              <motion.div
+                key={option.label}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: option.delay, duration: 0.22 }}
+                className={`group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-4 shadow-[0_10px_30px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_18px_45px_rgba(15,23,42,0.1)] ${option.highlight ? "ring-1 ring-emerald-200/60" : ""}`}
+              >
+                <div className="flex items-start gap-3">
+                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${option.accent} ring-1`}>
+                    {option.icon}
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm font-medium tracking-wide text-slate-500">
+                      {option.label}
+                    </p>
+                    <p className="mt-1 truncate text-lg font-semibold tracking-tight text-slate-900">
+                      {option.value}
+                    </p>
+                  </div>
+
+                  {option.highlight ? (
+                    <span className="rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-700">
+                      Best
+                    </span>
+                  ) : (
+                    <ArrowUpRight className="h-4 w-4 shrink-0 text-slate-300 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-slate-500" />
+                  )}
                 </div>
-                <p className="mt-1 text-base font-bold tracking-tight text-slate-900 sm:text-lg">
-                  {option.value}
+
+                <p className="mt-3 text-sm leading-5 text-slate-500">
+                  {option.shortLine}
                 </p>
-                <p className="mt-1.5 text-xs leading-5 text-slate-500 sm:mt-2 sm:text-sm sm:leading-6">
-                  {option.description}
-                </p>
-              </div>
-              <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-slate-300 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-slate-500 sm:h-5 sm:w-5" />
-            </motion.a>
+
+                <div className="mt-4">
+                  <Button asChild size="sm" className={`w-full rounded-xl px-4 py-2 text-sm font-semibold shadow-sm ${option.buttonClass}`}>
+                    <a
+                      href={option.action}
+                      target={option.external ? "_blank" : undefined}
+                      rel={option.external ? "noopener noreferrer" : undefined}
+                    >
+                      {option.buttonText}
+                    </a>
+                  </Button>
+                </div>
+              </motion.div>
             ))}
           </div>
 
