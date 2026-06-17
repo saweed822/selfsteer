@@ -22,7 +22,7 @@ export function ContactModal({ isOpen, onClose, title = "Contact Us" }: ContactM
       icon: <MessageCircle className="h-6 w-6" />,
       label: "WhatsApp",
       value: "Chat on WhatsApp",
-      action: "https://wa.me/7006730743",
+      action: "https://wa.me/9622002626",
       color: "bg-green-100 text-green-600",
       delay: 0.2
     },
