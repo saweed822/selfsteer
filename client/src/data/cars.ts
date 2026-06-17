@@ -22,7 +22,7 @@ export const carsData: Car[] = [
   {
     id: 3,
     name: "Jeep Compass",
-    type: "SUV",
+    type: "Compact SUV",
     pricePerDay: "₹7,999",
     originalPricePerDay: "₹11,499",
     discountTag: "Popular",
