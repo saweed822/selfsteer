@@ -66,13 +66,13 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="left-1/2 top-1/2 grid w-[calc(100vw-1rem)] max-w-[72rem] gap-0 overflow-hidden border border-white/10 bg-slate-950 p-0 text-white shadow-[0_32px_90px_rgba(15,23,42,0.45)] sm:w-[calc(100vw-2rem)] sm:max-w-[72rem]">
-        <div className="relative max-h-[calc(100dvh-1rem)] overflow-y-auto overflow-x-hidden overscroll-contain bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-4 py-4 sm:max-h-[calc(100dvh-2rem)] sm:px-6 sm:py-5 lg:px-8 lg:py-6">
+      <DialogContent className="left-1/2 top-1/2 grid max-h-[calc(100dvh-1rem)] w-[calc(100vw-1rem)] max-w-[72rem] gap-0 overflow-y-auto overflow-x-hidden overscroll-contain border border-white/10 bg-slate-950 p-0 text-white shadow-[0_32px_90px_rgba(15,23,42,0.45)] sm:max-h-[calc(100dvh-2rem)] sm:w-[calc(100vw-2rem)] sm:max-w-[72rem]">
+        <div className="relative bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6">
           <div className="pointer-events-none absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.16)_1px,transparent_0)] [background-size:22px_22px]" />
           <div className="pointer-events-none absolute -right-12 top-0 h-32 w-32 rounded-full bg-cyan-400/15 blur-3xl" />
           <div className="pointer-events-none absolute -left-12 bottom-0 h-32 w-32 rounded-full bg-blue-400/15 blur-3xl" />
 
-          <div className="relative z-10 flex min-w-0 flex-col items-start gap-3 min-[380px]:flex-row min-[380px]:items-center min-[380px]:justify-between">
+          <div className="relative z-10 flex min-w-0 flex-col items-start gap-3 pr-10 min-[380px]:flex-row min-[380px]:items-center min-[380px]:justify-between">
             <div className="inline-flex min-h-8 max-w-full min-w-0 items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-cyan-100 sm:text-[11px] sm:tracking-[0.28em]">
               <Sparkles className="h-3.5 w-3.5" />
               <span className="min-w-0 break-words leading-4">24/7 booking support</span>
@@ -102,7 +102,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
         </div>
 
         <div className="relative z-10 bg-gradient-to-b from-slate-50 to-white px-3 pb-4 pt-3 sm:px-4 sm:pb-5 sm:pt-4 lg:px-6 lg:pb-6 lg:pt-5">
-          <div className="grid min-w-0 gap-3 md:grid-cols-3 md:gap-4">
+          <div className="grid min-w-0 grid-cols-1 gap-3 lg:grid-cols-3 lg:gap-4">
             {contactOptions.map((option) => (
               <motion.div
                 key={option.label}
@@ -139,7 +139,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
                 </p>
 
                 <div className="mt-4">
-                  <Button asChild size="sm" className={`min-h-11 w-full rounded-xl px-4 py-3 text-sm font-semibold leading-none shadow-sm ${option.buttonClass}`}>
+                  <Button asChild size="sm" className={`min-h-11 w-full whitespace-normal rounded-xl px-4 py-3 text-center text-sm font-semibold leading-tight shadow-sm ${option.buttonClass}`}>
                     <a
                       href={option.action}
                       target={option.external ? "_blank" : undefined}
