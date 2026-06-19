@@ -66,8 +66,8 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="w-[calc(100vw-1rem)] max-w-[72rem] overflow-hidden border border-white/10 bg-slate-950 p-0 text-white shadow-[0_32px_90px_rgba(15,23,42,0.45)] sm:w-[calc(100vw-2rem)] sm:max-w-[72rem]">
-        <div className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-4 py-4 sm:px-6 sm:py-5 lg:px-8 lg:py-6">
+      <DialogContent className="left-1/2 top-1/2 w-[calc(100vw-1rem)] max-w-[72rem] max-h-[calc(100vh-1rem)] overflow-hidden border border-white/10 bg-slate-950 p-0 text-white shadow-[0_32px_90px_rgba(15,23,42,0.45)] sm:w-[calc(100vw-2rem)] sm:max-h-[calc(100vh-2rem)] sm:max-w-[72rem]">
+        <div className="relative max-h-[calc(100vh-1rem)] overflow-y-auto overflow-x-hidden bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-900 px-4 py-4 sm:max-h-[calc(100vh-2rem)] sm:px-6 sm:py-5 lg:px-8 lg:py-6">
           <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.16)_1px,transparent_0)] [background-size:22px_22px]" />
           <div className="absolute -right-12 top-0 h-32 w-32 rounded-full bg-cyan-400/15 blur-3xl" />
           <div className="absolute -left-12 bottom-0 h-32 w-32 rounded-full bg-blue-400/15 blur-3xl" />
@@ -83,7 +83,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
           </div>
 
           <DialogHeader className="relative z-10 mt-4 space-y-2 text-left sm:mt-5 lg:mt-6">
-            <DialogTitle className="text-2xl font-display font-semibold tracking-tight text-white sm:text-[2.3rem] lg:text-[2.6rem]">
+            <DialogTitle className="text-[1.65rem] font-display font-semibold tracking-tight text-white sm:text-[2.3rem] lg:text-[2.6rem]">
               {title}
             </DialogTitle>
             <p className="max-w-2xl text-sm leading-6 text-slate-200 sm:text-[0.98rem] sm:leading-6">
@@ -109,7 +109,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: option.delay, duration: 0.22 }}
-                className={`group flex h-full flex-col rounded-2xl border border-slate-200/80 bg-white p-4 shadow-[0_10px_30px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_18px_45px_rgba(15,23,42,0.1)] ${option.highlight ? "ring-1 ring-emerald-200/60" : ""}`}
+                className={`group flex h-full min-w-0 flex-col rounded-2xl border border-slate-200/80 bg-white p-4 shadow-[0_10px_30px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_18px_45px_rgba(15,23,42,0.1)] ${option.highlight ? "ring-1 ring-emerald-200/60" : ""}`}
               >
                 <div className="flex items-start gap-3">
                   <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${option.accent} ring-1`}>
@@ -120,7 +120,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
                     <p className="text-sm font-medium tracking-wide text-slate-500">
                       {option.label}
                     </p>
-                    <p className="mt-1 truncate text-lg font-semibold tracking-tight text-slate-900">
+                    <p className="mt-1 break-words text-base font-semibold tracking-tight text-slate-900 sm:text-lg">
                       {option.value}
                     </p>
                   </div>
