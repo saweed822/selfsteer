@@ -139,7 +139,7 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
                 </p>
 
                 <div className="mt-4">
-                  <Button asChild size="sm" className={`w-full rounded-xl px-4 py-2 text-sm font-semibold shadow-sm ${option.buttonClass}`}>
+                  <Button asChild size="sm" className={`w-full min-h-11 rounded-xl px-4 py-3 text-sm font-semibold leading-none shadow-sm ${option.buttonClass}`}>
                     <a
                       href={option.action}
                       target={option.external ? "_blank" : undefined}
