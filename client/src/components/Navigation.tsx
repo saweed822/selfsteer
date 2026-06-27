@@ -23,6 +23,7 @@ export function Navigation() {
     { href: "/", label: "Home" },
     { href: "/tours", label: "Tours" },
     { href: "/cars", label: "Car Rentals" },
+    { href: "/blog", label: "Blog" },
   ];
 
   const navbarClass = isScrolled || isMobileMenuOpen
