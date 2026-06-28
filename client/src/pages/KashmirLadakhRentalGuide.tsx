@@ -25,7 +25,7 @@ const benefits = [
   "An authentic travel experience",
 ];
 
-const kashmirPlaces = [
+const kashmirPlaces: [string, string[]][] = [
   ["Srinagar", ["Dal Lake", "Nigeen Lake", "Mughal Gardens", "Shankaracharya Temple", "Hazratbal Shrine", "Pari Mahal", "Boulevard Road", "Floating Market"]],
   ["Gulmarg", ["Gulmarg Gondola", "Apharwat Peak", "Skiing", "Snowboarding", "Strawberry Valley", "Golf Course", "Winter sports"]],
   ["Pahalgam", ["Betaab Valley", "Aru Valley", "Chandanwari", "Baisaran Valley", "Lidder River", "Saffron Fields"]],
@@ -35,7 +35,7 @@ const kashmirPlaces = [
   ["Gurez Valley", ["Razdan Pass", "Dawar Village", "Kishanganga River", "Habba Khatoon Peak", "Traditional villages"]],
 ];
 
-const ladakhPlaces = [
+const ladakhPlaces: [string, string[]][] = [
   ["Leh", ["Leh Palace", "Shanti Stupa", "Hall of Fame", "Leh Market"]],
   ["Nubra Valley", ["Hunder Sand Dunes", "Diskit Monastery", "Double-humped camels"]],
   ["Pangong Lake", ["Crystal blue waters", "Mountain landscapes", "Camping experiences"]],
@@ -43,7 +43,7 @@ const ladakhPlaces = [
   ["Tso Moriri", ["High-altitude lake", "Wildlife", "Remote landscapes"]],
 ];
 
-const vehicles = [
+const vehicles: [string, string[]][] = [
   ["Toyota Hilux 4x4", ["Ladakh expeditions", "Off-road adventures", "High-altitude travel"]],
   ["Toyota Fortuner", ["Family trips", "Luxury road travel", "Mountain highways"]],
   ["Mahindra Scorpio N", ["Kashmir sightseeing", "Ladakh road trips", "Group travel"]],
@@ -93,7 +93,7 @@ const whyChoose = [
   "Trusted by travelers from across India",
 ];
 
-const faqs = [
+const faqs: [string, string][] = [
   ["Can I rent a self-drive car in Kashmir?", "Yes. Self-drive car rentals are available in Srinagar and throughout Kashmir."],
   ["Can I take a self-drive car from Kashmir to Ladakh?", "Yes. Premium SUVs and 4x4 vehicles are ideal for Ladakh road trips."],
   ["Which vehicle is best for Ladakh?", "Toyota Hilux, Toyota Fortuner, Mahindra Scorpio N, and Mahindra Thar Roxx are among the best options."],
