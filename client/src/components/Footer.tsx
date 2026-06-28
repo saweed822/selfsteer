@@ -3,7 +3,7 @@ import { Mountain, MapPin, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="mt-auto rounded-t-[3rem] bg-slate-900 pb-10 pt-14 text-white sm:pt-20">
+    <footer className="mt-auto rounded-t-2xl bg-slate-900 pb-10 pt-14 text-white sm:pt-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-12 lg:grid-cols-4 lg:gap-12 lg:mb-16">
           
