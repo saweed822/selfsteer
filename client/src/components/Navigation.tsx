@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, Info, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ContactModal } from "@/components/ContactModal";
@@ -110,8 +110,8 @@ export function Navigation() {
               size="sm"
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
             >
-              <Info size={16} className="mr-2" />
-              About Us
+              <Phone size={16} className="mr-2" />
+              Contact Us
             </Button>
           </nav>
 
@@ -173,7 +173,7 @@ export function Navigation() {
                 }}
                 className="w-full mt-2 bg-primary text-primary-foreground"
               >
-                About Us
+                Contact Us
               </Button>
             </motion.div>
           )}

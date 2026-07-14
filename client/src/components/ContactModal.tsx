@@ -86,43 +86,18 @@ export function ContactModal({ isOpen, onClose, title = "Get in Touch" }: Contac
             <DialogTitle className="text-[1.5rem] font-display font-semibold leading-tight tracking-tight text-white min-[380px]:text-[1.65rem] sm:text-[2.3rem] lg:text-[2.6rem]">
               {title}
             </DialogTitle>
-            {title === "About Us" ? (
-              <div className="max-w-2xl text-sm leading-6 text-slate-200 sm:text-[0.98rem] sm:leading-6">
-                <p>
-                  Self Steer is a trusted self-drive car rental service operating in Kashmir and Ladakh. We provide transparent pricing, well-maintained vehicles, airport delivery, and 24/7 support.
-                </p>
-                <p className="mt-2">
-                  Fleet includes SUVs, sedans and premium cars suitable for local sightseeing and long-distance trips. We also offer long-term rentals and customized tour support.
-                </p>
-              </div>
-            ) : (
-              <p className="max-w-2xl text-sm leading-6 text-slate-200 sm:text-[0.98rem] sm:leading-6">
-                Tell us your dates or route and we’ll help you book the right self-drive car fast.
-              </p>
-            )}
+            <p className="max-w-2xl text-sm leading-6 text-slate-200 sm:text-[0.98rem] sm:leading-6">
+              Tell us your dates or route and we’ll help you book the right self-drive car fast.
+            </p>
           </DialogHeader>
-          <div className="relative z-10 mt-4 flex flex-col gap-4 sm:mt-5">
-            <div className="flex flex-wrap gap-2">
-              <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
-                WhatsApp first
-              </span>
-              <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
-                Quick callback
-              </span>
-            </div>
 
-            {title === "About Us" && (
-              <div className="rounded-2xl border border-slate-200/60 bg-white p-4 text-slate-900 shadow-sm">
-                <h4 className="text-sm font-semibold">Our Work</h4>
-                <ul className="mt-2 list-inside list-disc text-sm text-slate-700">
-                  <li>Self-drive car rentals across Kashmir &amp; Ladakh</li>
-                  <li>Airport delivery and pickup</li>
-                  <li>Long-term rentals and corporate hires</li>
-                  <li>Customized trip planning and route support</li>
-                </ul>
-                <p className="mt-3 text-sm text-slate-700">We focus on clean, well-maintained cars and transparent pricing so you can explore with confidence.</p>
-              </div>
-            )}
+          <div className="relative z-10 mt-4 flex flex-wrap gap-2 sm:mt-5">
+            <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
+              WhatsApp first
+            </span>
+            <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-[10px] font-medium text-slate-100 sm:text-xs">
+              Quick callback
+            </span>
           </div>
         </div>
 
