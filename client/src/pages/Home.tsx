@@ -101,47 +101,49 @@ export default function Home() {
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-100 text-sky-600 mb-5">
-                <DollarSign size={24} />
+              <div className="flex items-center gap-4 mb-5">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-100 text-sky-600">
+                  <DollarSign size={20} />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-0">Transparent Pricing</h3>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Transparent Pricing</h3>
-              <p className="text-sm text-slate-600 leading-7">
+              <p className="text-sm text-slate-600 leading-7 mt-2">
                 No hidden charges, fair pricing, and clear rental terms so you know exactly what you're paying for.
               </p>
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-600 mb-5">
-                <Car size={24} />
+              <div className="flex items-center gap-4 mb-5">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-600">
+                  <Car size={20} />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-0">Premium Fleet</h3>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Premium Fleet</h3>
-              <p className="text-sm text-slate-600 leading-7">
+              <p className="text-sm text-slate-600 leading-7 mt-2">
                 Drive clean, regularly serviced SUVs and hatchbacks built for Kashmir roads and Ladakh adventures.
               </p>
             </div>
+            
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-violet-100 text-violet-600 mb-5">
-                <CalendarDays size={24} />
+              <div className="flex items-center gap-4 mb-5">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-sky-50 text-sky-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-6 w-6 text-sky-700" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M2.5 19.5l19-7-7 7-4-8-8-4z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-0">Airport Delivery</h3>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Instant Booking</h3>
-              <p className="text-sm text-slate-600 leading-7">
-                Reserve your vehicle in minutes with flexible pickup options and quick confirmation.
-              </p>
-            </div>
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-50 text-sky-700 mb-5">
-                <span className="text-2xl">✈️</span>
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Airport Delivery</h3>
-              <p className="text-sm text-slate-600 leading-7">
+              <p className="text-sm text-slate-600 leading-7 mt-2">
                 Pick up your self drive car directly at Srinagar Airport or your hotel for a smooth start to your journey.
               </p>
             </div>
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-amber-100 text-amber-600 mb-5">
-                <Headset size={24} />
+              <div className="flex items-center gap-4 mb-5">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-3xl bg-amber-100 text-amber-600">
+                  <Headset size={20} />
+                </div>
+                <h3 className="text-xl font-semibold text-slate-900 mb-0">24/7 Support</h3>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">24/7 Support</h3>
-              <p className="text-sm text-slate-600 leading-7">
+              <p className="text-sm text-slate-600 leading-7 mt-2">
                 Help is available whenever you need it, from route advice to roadside support.
               </p>
             </div>
