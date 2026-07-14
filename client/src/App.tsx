@@ -12,6 +12,7 @@ import KashmirBlog from "@/pages/Blog";
 import KashmirItineraryBlog from "@/pages/KashmirItineraryBlog";
 import KashmirLadakhRentalGuide from "@/pages/KashmirLadakhRentalGuide";
 import LadakhBlog from "@/pages/LadakhBlog";
+import LadakhCars from "@/pages/LadakhCars";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { OrganizationJsonLd } from "@/components/Seo";
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/tours" component={Tours} />
       <Route path="/cars" component={Cars} />
+      <Route path="/cars/ladakh" component={LadakhCars} />
       <Route path="/blog/kashmir-self-drive-routes" component={KashmirBlog} />
       <Route path="/blog/complete-kashmir-travel-itinerary" component={KashmirItineraryBlog} />
       <Route path="/blog/kashmir-self-drive-car-rental-ladakh-guide" component={KashmirLadakhRentalGuide} />

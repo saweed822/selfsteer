@@ -24,10 +24,7 @@ export function Seo({
   noindex,
   ogType = "website",
 }: SeoProps) {
-  const fullTitle =
-    path === "/"
-      ? `${SITE_NAME} | Self Steer Car Rentals`
-      : `${title} | ${SITE_NAME}`;
+  const fullTitle = path === "/" ? SITE_NAME : `${title} | ${SITE_NAME}`;
 
   useEffect(() => {
     const canonicalUrl = absoluteUrl(path) || absoluteUrl("/");

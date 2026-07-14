@@ -1,16 +1,17 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Mountain, Car } from "lucide-react";
+import { ArrowRight, Mountain, Car, DollarSign, CalendarDays, Headset } from "lucide-react";
 import { Seo } from "@/components/Seo";
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative overflow-hidden flex flex-col md:flex-row">
+    <div className="min-h-full relative overflow-hidden">
       <Seo
-        title="Self Steer Car Rentals"
+        title="Self Steer Kashmir"
         description="Discover premium Kashmir tour packages and reliable car rentals for Srinagar, Gulmarg, Pahalgam and Ladakh adventures."
         path="/"
       />
+      <div className="flex flex-col md:flex-row min-h-screen">
       
       {/* SECTION 1: TOURS */}
       <motion.div 
@@ -87,6 +88,66 @@ export default function Home() {
           </div>
         </Link>
       </motion.div>
+      </div>
+
+      <section className="bg-slate-100 py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-3xl text-center mb-12">
+            <p className="text-sm uppercase tracking-[0.32em] text-slate-500 font-semibold mb-3">Self Steer Benefits</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-slate-900">Your Trusted Self Drive Car Rental in Kashmir and Ladakh</h2>
+            <p className="mt-4 text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              Choose from a fleet of well-maintained self drive cars with transparent pricing, airport pickup, and 24/7 local assistance across Kashmir and Ladakh.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-100 text-sky-600 mb-5">
+                <DollarSign size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Transparent Pricing</h3>
+              <p className="text-sm text-slate-600 leading-7">
+                No hidden charges, fair pricing, and clear rental terms so you know exactly what you're paying for.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-600 mb-5">
+                <Car size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Premium Fleet</h3>
+              <p className="text-sm text-slate-600 leading-7">
+                Drive clean, regularly serviced SUVs and hatchbacks built for Kashmir roads and Ladakh adventures.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-violet-100 text-violet-600 mb-5">
+                <CalendarDays size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Instant Booking</h3>
+              <p className="text-sm text-slate-600 leading-7">
+                Reserve your vehicle in minutes with flexible pickup options and quick confirmation.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-sky-50 text-sky-700 mb-5">
+                <span className="text-2xl">✈️</span>
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Airport Delivery</h3>
+              <p className="text-sm text-slate-600 leading-7">
+                Pick up your self drive car directly at Srinagar Airport or your hotel for a smooth start to your journey.
+              </p>
+            </div>
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <div className="inline-flex h-14 w-14 items-center justify-center rounded-3xl bg-amber-100 text-amber-600 mb-5">
+                <Headset size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">24/7 Support</h3>
+              <p className="text-sm text-slate-600 leading-7">
+                Help is available whenever you need it, from route advice to roadside support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

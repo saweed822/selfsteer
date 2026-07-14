@@ -50,7 +50,7 @@ export function applySeoHead(input: SeoHeadInput) {
   upsertMeta("property", "og:type", ogType);
   upsertMeta("property", "og:image", ogImage);
   upsertMeta("property", "og:locale", "en_IN");
-  upsertMeta("property", "og:site_name", "Self Steer Car Rentals Kashmir");
+  upsertMeta("property", "og:site_name", "Self Steer Kashmir");
   upsertLinkRel("canonical", canonicalUrl);
 }
 
@@ -60,7 +60,7 @@ export function setOrganizationJsonLd(siteUrl: string) {
   const payload = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "Self Steer Car Rentals Kashmir",
+    name: "Self Steer Kashmir",
     description:
       "Kashmir tour packages and premium car rentals for travelers exploring Srinagar, Gulmarg, Pahalgam, and beyond.",
     url: siteUrl || undefined,

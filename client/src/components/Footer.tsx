@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Mountain, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { Logo } from "@/components/Logo";
 
 export function Footer() {
   return (
@@ -9,14 +10,7 @@ export function Footer() {
           
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="bg-white/10 p-2 rounded-lg group-hover:bg-accent transition-colors">
-                <Mountain size={24} className="text-white" />
-              </div>
-              <span className="text-xl font-display font-bold">
-                Self<span className="text-accent">Steer</span>
-              </span>
-            </Link>
+            <Logo href="/" className="group" textClassName="text-white" highlightClassName="text-accent" subtitleClassName="text-slate-400" subtitle="Rent | Ride | Explore" />
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Your premium gateway to the paradise on earth. Offering curated tours and luxury fleet rentals for an unforgettable experience.
             </p>
@@ -83,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-center text-sm text-slate-500 md:flex-row md:text-left">
-          <p>© {new Date().getFullYear()} Self Steer Car Rentals. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Self Steer Kashmir. All rights reserved.</p>
           <p>Designed with ❤️ for the Mountains</p>
         </div>
       </div>
