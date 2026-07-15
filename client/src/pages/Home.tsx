@@ -56,37 +56,41 @@ export default function Home() {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="relative w-full md:w-1/2 h-[50vh] md:h-screen group overflow-hidden cursor-pointer"
+        className="relative w-full md:w-1/2 h-[50vh] md:h-screen group overflow-hidden"
       >
-        <Link href="/cars" className="block w-full h-full relative">
-          {/* Background Image - Road/Journey */}
-          <div className="absolute inset-0 z-0">
-             {/* Scenic Road Journey */}
-            <img 
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop" 
-              alt="Road Trip Journey" 
-              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-slate-900/60 group-hover:bg-slate-900/50 transition-colors duration-500 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
-          </div>
+        <div className="absolute inset-0 z-0">
+          {/* Scenic Road Journey */}
+          <img 
+            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop" 
+            alt="Road Trip Journey" 
+            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-slate-900/60 group-hover:bg-slate-900/50 transition-colors duration-500 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
+        </div>
 
-          {/* Content */}
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-8 text-center text-white">
-            <div className="mb-6 p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
-              <Car size={48} className="text-sky-300" />
-            </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 tracking-tight text-shadow-lg">
-              Car Rentals
-            </h2>
-            <p className="max-w-md text-lg md:text-xl text-gray-200 mb-8 font-light leading-relaxed">
-              Premium fleet for your comfortable journey through the valleys.
-            </p>
-            <span className="inline-flex items-center gap-2 px-8 py-3 bg-white text-primary rounded-full font-bold uppercase tracking-wide text-sm shadow-xl hover:bg-sky-300 hover:text-primary-foreground transition-all duration-300 group-hover:translate-y-[-5px]">
-              Book a Ride <ArrowRight size={18} />
-            </span>
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-8 text-center text-white">
+          <div className="mb-6 p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
+            <Car size={48} className="text-sky-300" />
           </div>
-        </Link>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 tracking-tight text-shadow-lg">
+            Car Rentals
+          </h2>
+          <p className="max-w-md text-lg md:text-xl text-gray-200 mb-4 font-light leading-relaxed">
+            Choose the region for your self-drive adventure and book with confidence.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+            <Link href="/cars" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-sky-300">
+              Kashmir Rentals
+            </Link>
+            <Link href="/cars/ladakh" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20">
+              Ladakh Rentals
+            </Link>
+          </div>
+          <span className="text-sm uppercase tracking-[0.28em] text-slate-200/90">
+            Pick your destination
+          </span>
+        </div>
       </motion.div>
       </div>
 
