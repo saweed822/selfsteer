@@ -18,7 +18,7 @@ export default function Home() {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full md:w-1/2 h-[50vh] md:h-screen group overflow-hidden cursor-pointer"
+        className="relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden cursor-pointer"
       >
         <Link href="/tours" className="block w-full h-full relative">
           {/* Background Image - Kashmir Landscape */}
@@ -34,17 +34,17 @@ export default function Home() {
           </div>
 
           {/* Content */}
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-8 text-center text-white">
-            <div className="mb-6 p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
-              <Mountain size={48} className="text-accent" />
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 py-6 text-center text-white sm:px-6 md:px-8">
+            <div className="mb-4 sm:mb-6 p-3 sm:p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
+              <Mountain size={36} className="text-accent sm:w-12 sm:h-12" />
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 tracking-tight text-shadow-lg">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-3 sm:mb-4 tracking-tight text-shadow-lg">
               Tour Packages
             </h2>
-            <p className="max-w-md text-lg md:text-xl text-gray-200 mb-8 font-light leading-relaxed">
+            <p className="max-w-md text-base sm:text-lg md:text-xl text-gray-200 mb-6 sm:mb-8 font-light leading-relaxed">
               Explore the paradise on earth with our curated premium travel experiences.
             </p>
-            <span className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-full font-bold uppercase tracking-wide text-sm shadow-xl hover:bg-white hover:text-primary transition-all duration-300 group-hover:translate-y-[-5px]">
+            <span className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 bg-accent text-accent-foreground rounded-full font-bold uppercase tracking-wide text-sm shadow-xl hover:bg-white hover:text-primary transition-all duration-300 group-hover:translate-y-[-5px]">
               Explore Tours <ArrowRight size={18} />
             </span>
           </div>
@@ -56,7 +56,7 @@ export default function Home() {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="relative w-full md:w-1/2 h-[50vh] md:h-screen group overflow-hidden"
+        className="relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden"
       >
         <div className="absolute inset-0 z-0">
           {/* Scenic Road Journey */}
@@ -69,17 +69,17 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
         </div>
 
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center p-8 text-center text-white">
-          <div className="mb-6 p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
-            <Car size={48} className="text-sky-300" />
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 py-6 text-center text-white sm:px-6 md:px-8">
+          <div className="mb-4 sm:mb-6 p-3 sm:p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 group-hover:scale-110 transition-transform duration-300">
+            <Car size={36} className="text-sky-300 sm:w-12 sm:h-12" />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 tracking-tight text-shadow-lg">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-3 sm:mb-4 tracking-tight text-shadow-lg">
             Car Rentals
           </h2>
-          <p className="max-w-md text-lg md:text-xl text-gray-200 mb-4 font-light leading-relaxed">
+          <p className="max-w-md text-base sm:text-lg md:text-xl text-gray-200 mb-4 sm:mb-5 font-light leading-relaxed">
             Choose the region for your self-drive adventure and book with confidence.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+          <div className="flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-md sm:flex-row sm:items-center sm:justify-center sm:gap-3 mb-4">
             <Link href="/cars" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-sky-300">
               Kashmir Rentals
             </Link>
