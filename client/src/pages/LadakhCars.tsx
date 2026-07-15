@@ -11,6 +11,9 @@ export default function LadakhCars() {
   const { data: cars, isLoading, isError } = useCars();
   const [selectedCar, setSelectedCar] = useState<string | null>(null);
 
+  const excludedLadakhCars = ["MG Hector", "MG Astor", "Hyundai i20", "Maruti Swift"];
+  const visibleCars = cars?.filter((car) => !excludedLadakhCars.includes(car.name));
+
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <Seo
@@ -74,7 +77,7 @@ export default function LadakhCars() {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {cars?.map((car, idx) => (
+            {visibleCars?.map((car, idx) => (
               <motion.div
                 key={car.id}
                 initial={{ opacity: 0, scale: 0.95 }}
