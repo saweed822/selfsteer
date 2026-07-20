@@ -12,6 +12,9 @@ import KashmirBlog from "@/pages/Blog";
 import KashmirItineraryBlog from "@/pages/KashmirItineraryBlog";
 import KashmirLadakhRentalGuide from "@/pages/KashmirLadakhRentalGuide";
 import LadakhBlog from "@/pages/LadakhBlog";
+import WhyVisitKashmirBlog from "@/pages/WhyVisitKashmirBlog";
+import WhyBookSelfSteerBlog from "@/pages/WhyBookSelfSteerBlog";
+import SrinagarLehUltimateGuide from "@/pages/SrinagarLehUltimateGuide";
 import LadakhCars from "@/pages/LadakhCars";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -29,6 +32,9 @@ function Router() {
       <Route path="/blog/kashmir-self-drive-car-rental-ladakh-guide" component={KashmirLadakhRentalGuide} />
       <Route path="/blog/kashmir-self-drive-car-rental-ladakh-guide/" component={KashmirLadakhRentalGuide} />
       <Route path="/blog/kashmir-to-ladakh-road-trip-guide" component={LadakhBlog} />
+      <Route path="/blog/why-visit-kashmir" component={WhyVisitKashmirBlog} />
+      <Route path="/blog/why-book-self-steer-kashmir" component={WhyBookSelfSteerBlog} />
+      <Route path="/blog/srinagar-to-leh-self-drive-ultimate-guide" component={SrinagarLehUltimateGuide} />
       <Route path="/blog" component={BlogIndex} />
       <Route component={NotFound} />
     </Switch>

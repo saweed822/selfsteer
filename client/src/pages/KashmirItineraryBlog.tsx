@@ -228,7 +228,7 @@ export default function KashmirItineraryBlog() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-primary text-white">
           <div className="absolute inset-0">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg"
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1920&auto=format&fit=crop"
               alt="Dal Lake in Srinagar with mountains"
               className="h-full w-full object-cover opacity-35"
             />

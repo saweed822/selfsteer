@@ -84,7 +84,7 @@ export default function Blog() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-primary text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1920&auto=format&fit=crop"
               alt="Mountain road for a Kashmir self-drive trip"
               className="h-full w-full object-cover opacity-35"
             />

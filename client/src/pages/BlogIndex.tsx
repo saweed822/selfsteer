@@ -1,16 +1,46 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar, Car, KeyRound, MapPin, Mountain, Route } from "lucide-react";
+import { ArrowRight, Calendar, Car, Heart, KeyRound, MapPin, Mountain, Route, ShieldCheck } from "lucide-react";
 import { Seo } from "@/components/Seo";
 
 const posts = [
+  {
+    href: "/blog/srinagar-to-leh-self-drive-ultimate-guide",
+    title: "Srinagar to Leh Self-Drive Road Trip: The Ultimate Guide",
+    description:
+      "Plan the spectacular Srinagar–Leh drive with a 3-day itinerary, route highlights, road conditions, best times to travel, and FAQs.",
+    image:
+      "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop",
+    meta: "Srinagar to Leh",
+    icon: Route,
+  },
+  {
+    href: "/blog/why-book-self-steer-kashmir",
+    title: "Why Book with Self Steer Kashmir?",
+    description:
+      "Learn what to expect from our clean vehicles, transparent pricing, flexible options, and local support for your Kashmir or Ladakh trip.",
+    image:
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1200&auto=format&fit=crop",
+    meta: "Self-Drive Car Rental",
+    icon: ShieldCheck,
+  },
+  {
+    href: "/blog/why-visit-kashmir",
+    title: "Why Visit Kashmir?",
+    description:
+      "Discover Kashmir's Himalayan peaks, lakes, gardens, houseboats, adventure activities, cuisine, and warm local hospitality.",
+    image:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
+    meta: "Kashmir Travel",
+    icon: Heart,
+  },
   {
     href: "/blog/kashmir-self-drive-routes",
     title: "Top 10 Kashmir Self Drive Routes",
     description:
       "Explore the best Kashmir self drive routes, including Gulmarg, Pahalgam, Sonamarg, Gurez, Doodhpathri, and more scenic road trips.",
     image:
-      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop",
     meta: "Kashmir Self Drive",
     icon: MapPin,
   },
@@ -20,7 +50,7 @@ const posts = [
     description:
       "Plan the ultimate Srinagar to Leh self-drive adventure with routes, permits, attractions, itineraries, vehicle tips, and FAQs.",
     image:
-      "https://images.unsplash.com/photo-1581793746485-04698e79a4e8?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1483347756197-71ef80e95f73?q=80&w=1200&auto=format&fit=crop",
     meta: "Ladakh Self-Drive",
     icon: Mountain,
   },
@@ -30,7 +60,7 @@ const posts = [
     description:
       "Plan Srinagar, Gulmarg, Pahalgam, Sonamarg, Doodhpathri, Yusmarg, Gurez Valley, and more with a complete Kashmir trip guide.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1200&auto=format&fit=crop",
     meta: "Kashmir Itinerary",
     icon: Route,
   },
@@ -39,7 +69,8 @@ const posts = [
     title: "Kashmir Self Drive Car Rental Guide",
     description:
       "Rent self-drive cars in Kashmir and explore Srinagar, Gulmarg, Pahalgam, Sonamarg, and Ladakh with routes, vehicle tips, and itineraries.",
-    image: "/Images/fortuner.avif",
+    image:
+      "https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=1200&auto=format&fit=crop",
     meta: "Car Rental Guide",
     icon: KeyRound,
   },

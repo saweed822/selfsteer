@@ -79,11 +79,11 @@ export default function Home() {
           <p className="max-w-md text-base sm:text-lg md:text-xl text-gray-200 mb-4 sm:mb-5 font-light leading-relaxed">
             Choose the region for your self-drive adventure and book with confidence.
           </p>
-          <div className="flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-md sm:flex-row sm:items-center sm:justify-center sm:gap-3 mb-4">
-            <Link href="/cars" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-sky-300">
+          <div className="flex w-full max-w-[22rem] flex-col items-stretch gap-3 sm:max-w-[26rem] sm:flex-row sm:items-center sm:justify-center sm:gap-3 mb-4">
+            <Link href="/cars" className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-primary shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-sky-300">
               Kashmir Rentals
             </Link>
-            <Link href="/cars/ladakh" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20">
+            <Link href="/cars/ladakh" className="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/10 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20">
               Ladakh Rentals
             </Link>
           </div>

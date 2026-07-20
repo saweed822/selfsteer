@@ -150,7 +150,7 @@ export default function KashmirLadakhRentalGuide() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="/Images/fortuner.avif"
+              src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1920&auto=format&fit=crop"
               alt="Self-drive SUV for Kashmir and Ladakh road trips"
               className="h-full w-full object-cover opacity-40"
             />
