@@ -15,6 +15,11 @@ import LadakhBlog from "@/pages/LadakhBlog";
 import WhyVisitKashmirBlog from "@/pages/WhyVisitKashmirBlog";
 import WhyBookSelfSteerBlog from "@/pages/WhyBookSelfSteerBlog";
 import SrinagarLehUltimateGuide from "@/pages/SrinagarLehUltimateGuide";
+import SrinagarToGulmargGuide from "@/pages/SrinagarToGulmargGuide";
+import SrinagarAirportCarRental from "@/pages/SrinagarAirportCarRental";
+import SelfDriveVsTaxi from "@/pages/SelfDriveVsTaxi";
+import SrinagarToPahalgamGuide from "@/pages/SrinagarToPahalgamGuide";
+import SrinagarToSonamargGuide from "@/pages/SrinagarToSonamargGuide";
 import LadakhCars from "@/pages/LadakhCars";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -35,6 +40,11 @@ function Router() {
       <Route path="/blog/why-visit-kashmir" component={WhyVisitKashmirBlog} />
       <Route path="/blog/why-book-self-steer-kashmir" component={WhyBookSelfSteerBlog} />
       <Route path="/blog/srinagar-to-leh-self-drive-ultimate-guide" component={SrinagarLehUltimateGuide} />
+      <Route path="/blog/srinagar-airport-car-rental" component={SrinagarAirportCarRental} />
+      <Route path="/blog/self-drive-vs-taxi" component={SelfDriveVsTaxi} />
+      <Route path="/blog/srinagar-to-pahalgam-road-trip-guide" component={SrinagarToPahalgamGuide} />
+      <Route path="/blog/srinagar-to-sonamarg-road-trip-guide" component={SrinagarToSonamargGuide} />
+      <Route path="/blog/srinagar-to-gulmarg-road-trip-guide" component={SrinagarToGulmargGuide} />
       <Route path="/blog" component={BlogIndex} />
       <Route component={NotFound} />
     </Switch>

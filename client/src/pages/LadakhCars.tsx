@@ -22,7 +22,7 @@ export default function LadakhCars() {
         path="/cars/ladakh"
       />
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 flex flex-col md:flex-row justify-between items-end gap-6 border-b border-gray-200 pb-8">
+        <div className="mb-12 flex flex-col items-start justify-between gap-6 border-b border-gray-200 pb-8 md:flex-row md:items-end">
           <div className="space-y-6">
             <div className="space-y-2">
               <motion.h1
@@ -43,11 +43,11 @@ export default function LadakhCars() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-gray-200 bg-white p-5 shadow-sm">
+              <div className="rounded-3xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">High-Altitude Ready</p>
                 <p className="mt-3 text-sm text-slate-600">Our vehicles are selected for durability, comfort, and reliability on Ladakh’s mountain highways.</p>
               </div>
-              <div className="rounded-3xl border border-gray-200 bg-white p-5 shadow-sm">
+              <div className="rounded-3xl border border-gray-200 bg-white p-4 shadow-sm sm:p-5">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500">Route Support</p>
                 <p className="mt-3 text-sm text-slate-600">Perfect for Srinagar-Leh, Tso Moriri and Pangong Lake circuits, with support options for long-distance self-drive touring.</p>
               </div>
@@ -102,7 +102,7 @@ export default function LadakhCars() {
                   </div>
                 </div>
 
-                <div className="p-6 flex-1 flex flex-col">
+                  <div className="p-5 sm:p-6 flex-1 flex flex-col">
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">{car.name}</h3>
@@ -113,7 +113,7 @@ export default function LadakhCars() {
                     </div>
                   </div>
 
-                  <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between gap-4">
+                    <div className="mt-auto flex flex-col gap-4 border-t border-gray-100 pt-5 min-[400px]:flex-row min-[400px]:items-center min-[400px]:justify-between sm:pt-6">
                     <div className="flex flex-col">
                       <span className="text-xs text-muted-foreground font-medium uppercase tracking-wide">Starting at</span>
                       <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">

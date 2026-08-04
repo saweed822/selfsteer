@@ -37,7 +37,7 @@ export default function Tours() {
       <div className="container mx-auto px-4 md:px-6">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="mx-auto mb-12 max-w-3xl space-y-4 text-center sm:mb-16">
           <motion.span 
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export default function Tours() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-display font-bold text-primary"
+            className="text-3xl font-display font-bold text-primary sm:text-4xl md:text-5xl"
           >
             Choose Your Kashmir Experience
           </motion.h1>
@@ -96,7 +96,7 @@ export default function Tours() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
-                className={`relative flex flex-col rounded-3xl p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border ${getCardStyle(pkg.badge)}`}
+                className={`relative flex flex-col rounded-3xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border ${getCardStyle(pkg.badge)}`}
               >
                 {/* Badge */}
                 <div className={`absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider border shadow-md ${getBadgeColor(pkg.badge)}`}>

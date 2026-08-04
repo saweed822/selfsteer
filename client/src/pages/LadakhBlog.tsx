@@ -170,8 +170,8 @@ export default function LadakhBlog() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1581793746485-04698e79a4e8?q=80&w=1920&auto=format&fit=crop"
-              alt="High altitude road toward Ladakh"
+              src="https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1920&auto=format&fit=crop"
+              alt="High-altitude mountain road in Ladakh"
               className="h-full w-full object-cover opacity-40"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-primary/80 to-slate-950/40" />

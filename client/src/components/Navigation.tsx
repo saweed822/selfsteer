@@ -57,7 +57,7 @@ export function Navigation() {
             href="/"
             className="z-50"
             textClassName={location === '/' && !isScrolled ? 'text-white' : 'text-foreground'}
-            subtitle="Rent | Ride | Explore"
+            subtitle="Drive Beyond Limits"
             subtitleClassName={location === '/' && !isScrolled ? 'mt-1 text-[0.65rem] uppercase tracking-[0.3em] text-white/75' : 'mt-1 text-[0.65rem] uppercase tracking-[0.3em] text-slate-500'}
           />
 
@@ -131,7 +131,7 @@ export function Navigation() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="absolute top-0 left-0 right-0 bg-background border-b border-border shadow-xl p-4 pt-24 md:hidden flex flex-col gap-4"
+              className="absolute top-0 left-0 right-0 flex max-h-[100dvh] flex-col gap-4 overflow-y-auto overscroll-contain bg-background p-4 pt-24 shadow-xl border-b border-border md:hidden"
             >
               {navLinks.map((link) =>
                 link.children ? (

@@ -34,18 +34,18 @@ const faqs = [
 
 const routeImages = [
   {
-    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
-    alt: "Scenic valley landscape along a Himalayan road trip",
+    src: "https://images.unsplash.com/photo-1643449416258-5c8e7ec598b1?q=80&w=1200&auto=format&fit=crop",
+    alt: "Sonamarg valley and mountain stream in Kashmir",
     label: "Kashmir valleys",
   },
   {
-    src: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop",
-    alt: "Snow-covered Himalayan mountain pass",
+    src: "https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1200&auto=format&fit=crop",
+    alt: "High-altitude mountain road in Ladakh",
     label: "High mountain passes",
   },
   {
-    src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop",
-    alt: "Mountain lake and rugged landscape in Ladakh",
+    src: "https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1200&auto=format&fit=crop",
+    alt: "Rugged Ladakh mountain road",
     label: "Ladakh landscapes",
   },
 ];
@@ -53,11 +53,11 @@ const routeImages = [
 export default function SrinagarLehUltimateGuide() {
   return (
     <div className="min-h-screen bg-slate-50 pt-24 pb-16">
-      <Seo title="Srinagar to Leh Self-Drive Road Trip: Ultimate Guide" description="Plan a Srinagar to Leh self-drive road trip with route highlights, a 3-day itinerary, road conditions, best travel time, FAQs, and vehicle advice." path="/blog/srinagar-to-leh-self-drive-ultimate-guide" ogType="article" />
+      <Seo title="Srinagar to Leh Road Trip: The Ultimate Guide" description="A complete guide for the Srinagar to Leh self-drive road trip: route, stops, road conditions, packing list and tips." path="/blog/srinagar-to-leh-self-drive-ultimate-guide" ogType="article" />
       <article>
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1920&auto=format&fit=crop" alt="Himalayan road on the Srinagar to Leh route" className="h-full w-full object-cover opacity-35" />
+            <img src="https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1920&auto=format&fit=crop" alt="High-altitude road through the Ladakh mountains" className="h-full w-full object-cover opacity-35" />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-primary/85 to-slate-900/60" />
           </div>
           <div className="container relative mx-auto px-4 py-16 md:px-6 md:py-24">
@@ -66,47 +66,100 @@ export default function SrinagarLehUltimateGuide() {
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-1.5 backdrop-blur"><Calendar size={16} /> Ladakh Road Trip Guide</span>
                 <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-3 py-1.5 backdrop-blur"><Car size={16} /> Self-drive adventure</span>
               </div>
-              <h1 className="max-w-4xl text-4xl font-display font-bold leading-tight md:text-6xl">Srinagar to Leh Self-Drive Road Trip: The Ultimate Guide</h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-white/90 md:text-xl">A spectacular Himalayan journey through lush valleys, high mountain passes, historic towns, and rugged Ladakh landscapes.</p>
+              <h1 className="max-w-4xl text-4xl font-display font-bold leading-tight md:text-6xl">Srinagar to Leh Road Trip: The Ultimate Guide</h1>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-white/90 md:text-xl">A road trip from <strong>Srinagar to Leh</strong> is one of the most breathtaking journeys in the world — lush valleys, high passes, historic towns, and remote Himalayan landscapes.</p>
             </motion.div>
           </div>
         </section>
 
         <section className="container mx-auto px-4 py-12 md:px-6 md:py-16">
           <div className="mx-auto max-w-4xl space-y-8">
-            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-display font-bold text-primary">A Journey to Remember</h2>
-              <p className="mt-4 leading-8 text-slate-700">A road trip from Srinagar to Leh is one of the most spectacular journeys in India. Unlike guided tours or taxis, a self-drive car lets you travel at your own pace: stop at breathtaking viewpoints, spend more time in the places you love, and discover hidden gems many tourists miss.</p>
-              <p className="mt-4 leading-8 text-slate-700">Whether you&apos;re an adventure enthusiast, a photographer, or a family planning a memorable holiday, this guide will help you prepare for the journey from Kashmir to Ladakh.</p>
+            <nav id="toc" className="rounded-lg border border-slate-200 bg-white p-4 text-sm">
+              <p className="font-display font-semibold text-slate-900">Contents</p>
+              <ul className="mt-3 space-y-2 text-slate-700">
+                <li><a className="hover:text-primary" href="#why-drive">Why drive from Srinagar to Leh</a></li>
+                <li><a className="hover:text-primary" href="#distance">Distance & Driving Time</a></li>
+                <li><a className="hover:text-primary" href="#best-route">Best Route</a></li>
+                <li><a className="hover:text-primary" href="#sonamarg">Sonamarg</a></li>
+                <li><a className="hover:text-primary" href="#zoji-la">Zoji La Pass</a></li>
+                <li><a className="hover:text-primary" href="#lamayuru">Lamayuru</a></li>
+                <li><a className="hover:text-primary" href="#itinerary">Suggested Itinerary</a></li>
+                <li><a className="hover:text-primary" href="#road-conditions">Road Conditions</a></li>
+                <li><a className="hover:text-primary" href="#faq">FAQ</a></li>
+              </ul>
+            </nav>
+
+            <section id="why-drive" className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-2xl font-display font-bold text-primary">Why Drive from Srinagar to Leh?</h2>
+              <p className="mt-4 leading-8 text-slate-700">Driving the Srinagar–Leh Highway provides gradual altitude gain, incredible mountain scenery, historic towns, beautiful rivers, famous passes, and endless photography opportunities. The route gives freedom to stop wherever the landscape captures your attention.</p>
             </section>
 
-            <section className="grid gap-5 md:grid-cols-3">
-              {routeImages.map((image) => (
-                <figure key={image.label} className="group relative h-64 overflow-hidden rounded-lg bg-slate-200 shadow-sm">
-                  <img src={image.src} alt={image.alt} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/80 to-transparent px-5 pb-4 pt-12 font-display text-lg font-bold text-white">{image.label}</figcaption>
-                </figure>
-              ))}
+            <section id="distance">
+              <h2 className="text-3xl font-display font-bold text-slate-950">Srinagar to Leh Distance</h2>
+              <p className="mt-3 leading-8 text-slate-700"><strong>Distance:</strong> Approximately <strong>420 km</strong><br/><strong>Driving Time:</strong> 9–12 hours (without long stops)<br/><strong>Recommended Duration:</strong> 2 days</p>
             </section>
 
-            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-              <div className="flex items-center gap-3"><Route className="text-primary" /><h2 className="text-2xl font-display font-bold text-primary">Why Choose the Srinagar–Leh Route?</h2></div>
-              <p className="mt-4 leading-8 text-slate-700">The two main routes to Ladakh are Srinagar → Leh and Manali → Leh. Many experienced travellers prefer the Srinagar–Leh Highway because its more gradual increase in altitude gives the body more time to acclimatize, reducing the risk of altitude sickness. The route is also rich in history, culture, and natural beauty.</p>
-              <h3 className="mt-6 text-lg font-display font-bold text-slate-900">Highlights of the Srinagar Route</h3>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">{highlights.map((highlight) => <div key={highlight} className="flex items-center gap-3 rounded-lg bg-slate-50 p-3 font-medium text-slate-800"><Check size={18} className="text-primary" />{highlight}</div>)}</div>
+            <section id="best-route" className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-2xl font-display font-bold text-primary">Best Route</h2>
+              <p className="mt-4 leading-8 text-slate-700">Classic route: <strong>Srinagar → Sonamarg → Zoji La Pass → Drass → Kargil → Mulbekh → Lamayuru → Nimmu → Leh</strong>. Each section offers different landscapes, from green valleys to high-altitude desert terrain.</p>
+            </section>
+
+            <section id="sonamarg" className="group relative rounded-lg overflow-hidden border border-slate-200 bg-white shadow-sm">
+              <div className="relative h-56 sm:h-72">
+                <img src="https://images.unsplash.com/photo-1643449416258-5c8e7ec598b1?q=80&w=1600&auto=format&fit=crop" alt="Sonamarg valley" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-display font-bold">Sonamarg</h3>
+                <p className="mt-2 text-slate-700">Known as the "Meadow of Gold," Sonamarg offers spectacular mountain scenery and is an ideal stop before the climb to Zoji La.</p>
+              </div>
+            </section>
+
+            <section id="zoji-la" className="group relative rounded-lg overflow-hidden border border-slate-200 bg-white shadow-sm">
+              <div className="relative h-56 sm:h-72">
+                <img src="https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1600&auto=format&fit=crop" alt="High-altitude road toward Zoji La and Ladakh" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-display font-bold">Zoji La Pass</h3>
+                <p className="mt-2 text-slate-700">One of India's most iconic mountain passes — expect narrow roads, changing weather, and spectacular views. Drive cautiously and follow advisories.</p>
+              </div>
+            </section>
+
+            <section id="lamayuru" className="group relative rounded-lg overflow-hidden border border-slate-200 bg-white shadow-sm">
+              <div className="relative h-56 sm:h-72">
+                <img src="https://images.unsplash.com/photo-1728723320880-5fb28619c5ff?q=80&w=1600&auto=format&fit=crop" alt="Rugged Ladakh mountain road near Lamayuru" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-display font-bold">Lamayuru</h3>
+                <p className="mt-2 text-slate-700">Often called the Moonland of Ladakh, Lamayuru features dramatic landscapes and an ancient monastery worth visiting.</p>
+              </div>
             </section>
 
             <section className="grid gap-4 sm:grid-cols-3">
-              {[['Distance', 'Approximately 420 km', MapPin], ['Driving time', '10–12 hours without long stops', Clock], ['Recommended duration', '2–3 days', Mountain]].map(([label, value, Icon]) => {
-                const StatIcon = Icon as typeof MapPin;
-                return <div key={label as string} className="rounded-lg bg-primary p-5 text-white"><StatIcon size={22} /><p className="mt-4 text-sm font-semibold text-white/75">{label as string}</p><p className="mt-1 font-display text-lg font-bold">{value as string}</p></div>;
-              })}
+              <div className="rounded-lg bg-primary p-5 text-white"><MapPin size={22} /><p className="mt-4 text-sm font-semibold text-white/75">Distance</p><p className="mt-1 font-display text-lg font-bold">Approximately 420 km</p></div>
+              <div className="rounded-lg bg-primary p-5 text-white"><Clock size={22} /><p className="mt-4 text-sm font-semibold text-white/75">Driving time</p><p className="mt-1 font-display text-lg font-bold">9–12 hours</p></div>
+              <div className="rounded-lg bg-primary p-5 text-white"><Mountain size={22} /><p className="mt-4 text-sm font-semibold text-white/75">Recommended duration</p><p className="mt-1 font-display text-lg font-bold">2 days</p></div>
             </section>
 
             <section>
-              <h2 className="text-3xl font-display font-bold text-slate-950">Suggested 3-Day Itinerary</h2>
-              <p className="mt-3 leading-8 text-slate-700">Although the drive can technically be completed in a day, splitting it into two days is more comfortable and leaves time to enjoy the scenery.</p>
-              <div className="mt-6 space-y-5">{itinerary.map((item, index) => <motion.section key={item.day} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.06 }} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"><span className="inline-flex rounded-full bg-accent px-3 py-1 text-sm font-bold text-accent-foreground">{item.day}</span><h3 className="mt-3 text-2xl font-display font-bold text-slate-900">{item.title}</h3><p className="mt-1 font-semibold text-primary">Distance: {item.distance}</p><p className="mt-4 leading-8 text-slate-700">{item.text}</p><p className="mt-4 font-semibold text-slate-900">Stops to explore:</p><div className="mt-2 flex flex-wrap gap-2">{item.stops.map((stop) => <span key={stop} className="rounded-full bg-slate-100 px-3 py-1.5 text-sm font-medium text-slate-700">{stop}</span>)}</div></motion.section>)}</div>
+              <h2 className="text-3xl font-display font-bold text-slate-950">Suggested 2-Day Itinerary</h2>
+              <p className="mt-3 leading-8 text-slate-700">Although possible in one day, splitting into two provides comfort and time to enjoy stops.</p>
+              <div className="mt-6 space-y-5">
+                <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+                  <span className="inline-flex rounded-full bg-accent px-3 py-1 text-sm font-bold text-accent-foreground">Day 1</span>
+                  <h3 className="mt-3 text-2xl font-display font-bold text-slate-900">Srinagar → Sonamarg → Zoji La → Drass → Kargil</h3>
+                  <p className="mt-1 font-semibold text-primary">Distance: Approximately 200 km</p>
+                  <p className="mt-4 leading-8 text-slate-700">Stay overnight in Kargil to acclimatize and rest before the second day's drive.</p>
+                </motion.section>
+                <motion.section initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+                  <span className="inline-flex rounded-full bg-accent px-3 py-1 text-sm font-bold text-accent-foreground">Day 2</span>
+                  <h3 className="mt-3 text-2xl font-display font-bold text-slate-900">Kargil → Mulbekh → Lamayuru → Nimmu → Leh</h3>
+                  <p className="mt-1 font-semibold text-primary">Distance: Approximately 220 km</p>
+                  <p className="mt-4 leading-8 text-slate-700">Enjoy the changing landscapes and stop at viewpoints and historic sites along the way.</p>
+                </motion.section>
+              </div>
             </section>
 
             <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
@@ -115,7 +168,15 @@ export default function SrinagarLehUltimateGuide() {
               <div className="mt-6 grid gap-4 sm:grid-cols-2"><div className="rounded-lg bg-slate-50 p-5"><h3 className="font-display font-bold text-slate-900">May–August</h3><p className="mt-2 leading-7 text-slate-700">Roads are usually open, temperatures are pleasant, and landscapes are vibrant. Occasional rain may occur in Kashmir.</p></div><div className="rounded-lg bg-slate-50 p-5"><h3 className="font-display font-bold text-slate-900">September–October</h3><p className="mt-2 leading-7 text-slate-700">Enjoy cooler weather, fewer tourists, clear mountain views, and autumn colour. Snow closures grow more likely from late October.</p></div></div>
             </section>
 
-            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8"><h2 className="text-2xl font-display font-bold text-primary">Frequently Asked Questions</h2><div className="mt-5 divide-y divide-slate-200">{faqs.map(([question, answer]) => <div key={question} className="py-5 first:pt-0 last:pb-0"><h3 className="font-display text-lg font-bold text-slate-900">{question}</h3><p className="mt-2 leading-7 text-slate-700">{answer}</p></div>)}</div></section>
+            <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+              <h2 className="text-2xl font-display font-bold text-primary">Frequently Asked Questions</h2>
+              <div className="mt-5 divide-y divide-slate-200">
+                <div className="py-5"><h3 className="font-display text-lg font-bold text-slate-900">Is the Srinagar to Leh road safe?</h3><p className="mt-2 leading-7 text-slate-700">Yes, during the open season. Drive responsibly, check weather updates, and follow local advisories.</p></div>
+                <div className="py-5"><h3 className="font-display text-lg font-bold text-slate-900">How many days should I plan?</h3><p className="mt-2 leading-7 text-slate-700">A minimum of two days for the drive itself; allow extra days to explore Leh and nearby attractions.</p></div>
+                <div className="py-5"><h3 className="font-display text-lg font-bold text-slate-900">Do I need a 4x4 vehicle?</h3><p className="mt-2 leading-7 text-slate-700">Not necessarily. A well-maintained SUV or crossover is ideal; sedans can manage during good weather with caution.</p></div>
+                <div className="py-5"><h3 className="font-display text-lg font-bold text-slate-900">Is there enough fuel available?</h3><p className="mt-2 leading-7 text-slate-700">Yes, but stations are limited. Refill whenever possible before long stretches.</p></div>
+              </div>
+            </section>
 
             <section className="rounded-lg bg-primary p-6 text-white shadow-lg md:p-8"><div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/15"><ShieldCheck size={24} /></div><h2 className="mt-5 text-2xl font-display font-bold">Why Choose Self Steer Kashmir?</h2><p className="mt-3 leading-8 text-white/90">We specialize in self-drive adventures across Kashmir and Ladakh, with well-maintained hatchbacks, sedans, and SUVs, transparent pricing, convenient pickup and drop-off options, and responsive support throughout your trip.</p><p className="mt-3 leading-8 text-white/90">From weekend getaways to multi-day Himalayan road trips, we aim to make every journey safe, comfortable, and memorable.</p></section>
 
