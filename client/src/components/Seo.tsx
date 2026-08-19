@@ -39,6 +39,19 @@ export function Seo({
       noindex,
       ogType,
     });
+
+    // Google Search Console verification
+    let verificationTag = document.querySelector(
+      'meta[name="google-site-verification"]'
+    ) as HTMLMetaElement | null;
+
+    if (!verificationTag) {
+      verificationTag = document.createElement("meta");
+      verificationTag.name = "google-site-verification";
+      document.head.appendChild(verificationTag);
+    }
+
+    verificationTag.content = "j3j9axWwk-luzhUK89fiLuncycFZo8NtUK22yPd5-2Y";
   }, [fullTitle, description, path, image, noindex, ogType]);
 
   return null;
