@@ -5,8 +5,8 @@ export const carsData: Car[] = [
     id: 1,
     name: "Toyota Fortuner 4WD",
     type: "SUV",
-    pricePerDay: "₹12,999",
-    originalPricePerDay: "₹14,999",
+    pricePerDay: "₹14,999",
+    originalPricePerDay: "₹16,999",
     discountTag: "Luxury",
     imageUrl: "/Images/fortuner.avif"
   },
@@ -32,8 +32,8 @@ export const carsData: Car[] = [
     id: 4,
     name: "Toyota Hilux 4WD",
     type: "SUV",
-    pricePerDay: "₹12,999",
-    originalPricePerDay: "₹14,999",
+    pricePerDay: "₹14,999",
+    originalPricePerDay: "₹16,999",
     discountTag: "Offroad",
     imageUrl: "/Images/toyota_hilux.avif"
   },
@@ -66,13 +66,13 @@ export const carsData: Car[] = [
   },
   {
     id: 8,
-    name: "MG Astor",
-    type: "COMPACT SUV",
-    pricePerDay: "₹4,499",
-    originalPricePerDay: "₹5,999",
-    discountTag: "Budget Pick",
-    imageUrl: "/Images/astor.avif"
-   },
+    name: "Maruti Suzuki Grand Vitara",
+    type: "Compact SUV",
+    pricePerDay: "₹5,499",
+    originalPricePerDay: "₹6,499",
+    discountTag: "Popular",
+    imageUrl: "/Images/vitara.webp"
+  },
   {
     id: 9,
     name: "Xuv 500",
@@ -80,7 +80,7 @@ export const carsData: Car[] = [
     pricePerDay: "₹4,499",
     originalPricePerDay: "₹5,999",
     discountTag: "25%",
-    imageUrl: "/Images/xuv500.jpg"  
+    imageUrl: "/Images/xuv500.jpg"
   },
   {
     id: 10,

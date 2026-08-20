@@ -10,6 +10,7 @@ import { Seo } from "@/components/Seo";
 export default function Cars() {
   const { data: cars, isLoading, isError } = useCars();
   const [selectedCar, setSelectedCar] = useState<string | null>(null);
+  const visibleCars = cars?.filter((car) => car.name !== "MG Astor");
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
@@ -78,7 +79,7 @@ export default function Cars() {
         ) : (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {cars?.map((car, idx) => (
+              {visibleCars?.map((car, idx) => (
                 <motion.div
                   key={car.id}
                   initial={{ opacity: 0, scale: 0.95 }}

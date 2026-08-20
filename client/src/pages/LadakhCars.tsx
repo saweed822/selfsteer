@@ -11,7 +11,7 @@ export default function LadakhCars() {
   const { data: cars, isLoading, isError } = useCars();
   const [selectedCar, setSelectedCar] = useState<string | null>(null);
 
-  const excludedLadakhCars = ["MG Hector", "MG Astor", "Hyundai i20", "Maruti Swift"];
+  const excludedLadakhCars = ["MG Hector", "MG Astor", "Mahindra XUV 500", "XUV 500", "Xuv 500", "Hyundai i20", "Maruti Swift"];
   const visibleCars = cars?.filter((car) => !excludedLadakhCars.includes(car.name));
 
   return (

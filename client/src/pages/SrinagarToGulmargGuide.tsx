@@ -45,7 +45,7 @@ export default function SrinagarToGulmargGuide() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1920&auto=format&fit=crop"
+              src="/Images/gulmarg.jpg"
               alt="Gulmarg meadow with snow-capped mountains in Kashmir"
               loading="lazy"
               decoding="async"

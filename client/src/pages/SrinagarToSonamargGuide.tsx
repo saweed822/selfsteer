@@ -16,7 +16,7 @@ export default function SrinagarToSonamargGuide() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1920&auto=format&fit=crop"
+              src="/Images/sonamrg.avif"
               alt="Sonamarg valley with river and snow-capped mountains in Kashmir"
               loading="lazy"
               decoding="async"

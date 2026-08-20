@@ -20,6 +20,10 @@ import SrinagarAirportCarRental from "@/pages/SrinagarAirportCarRental";
 import SelfDriveVsTaxi from "@/pages/SelfDriveVsTaxi";
 import SrinagarToPahalgamGuide from "@/pages/SrinagarToPahalgamGuide";
 import SrinagarToSonamargGuide from "@/pages/SrinagarToSonamargGuide";
+import DoodhpathriTravelGuide from "@/pages/DoodhpathriTravelGuide";
+import GurezValleyRoadTripGuide from "@/pages/GurezValleyRoadTripGuide";
+import SinthanTopRoadTripGuide from "@/pages/SinthanTopRoadTripGuide";
+import CarRentalSrinagarGuide from "@/pages/CarRentalSrinagarGuide";
 import LadakhCars from "@/pages/LadakhCars";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
@@ -45,6 +49,10 @@ function Router() {
       <Route path="/blog/srinagar-to-pahalgam-road-trip-guide" component={SrinagarToPahalgamGuide} />
       <Route path="/blog/srinagar-to-sonamarg-road-trip-guide" component={SrinagarToSonamargGuide} />
       <Route path="/blog/srinagar-to-gulmarg-road-trip-guide" component={SrinagarToGulmargGuide} />
+      <Route path="/blog/doodhpathri-travel-guide" component={DoodhpathriTravelGuide} />
+      <Route path="/blog/gurez-valley-road-trip-guide" component={GurezValleyRoadTripGuide} />
+      <Route path="/blog/sinthan-top-road-trip-guide" component={SinthanTopRoadTripGuide} />
+      <Route path="/blog/car-rental-in-srinagar" component={CarRentalSrinagarGuide} />
       <Route path="/blog" component={BlogIndex} />
       <Route component={NotFound} />
     </Switch>

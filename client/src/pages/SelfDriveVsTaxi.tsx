@@ -16,7 +16,7 @@ export default function SelfDriveVsTaxi() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1920&auto=format&fit=crop"
+              src="/Images/selfdrive.jpg"
               alt="Car on a mountain road"
               className="h-full w-full object-cover opacity-35"
             />

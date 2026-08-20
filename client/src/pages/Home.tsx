@@ -13,12 +13,12 @@ export default function Home() {
       />
       <div className="flex flex-col md:flex-row min-h-screen">
       
-      {/* SECTION 1: TOURS */}
+      {/* SECTION 2: TOURS */}
       <motion.div 
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden cursor-pointer"
+        className="order-2 relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden cursor-pointer"
       >
         <Link href="/tours" className="block w-full h-full relative">
           {/* Background Image - Kashmir Landscape */}
@@ -51,12 +51,12 @@ export default function Home() {
         </Link>
       </motion.div>
 
-      {/* SECTION 2: CARS */}
+      {/* SECTION 1: CARS */}
       <motion.div 
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden"
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="order-1 relative w-full md:w-1/2 h-[52vh] sm:h-[58vh] md:h-screen group overflow-hidden"
       >
         <div className="absolute inset-0 z-0">
           {/* Scenic Road Journey */}

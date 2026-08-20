@@ -5,6 +5,42 @@ import { Seo } from "@/components/Seo";
 
 const posts = [
   {
+    href: "/blog/car-rental-in-srinagar",
+    title: "Car Rental in Srinagar: Everything Tourists Need to Know",
+    description: "Learn about self-drive rentals, documents, airport pickup, the best cars, pricing considerations, and tips for exploring Kashmir from Srinagar.",
+    image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?q=80&w=1200&auto=format&fit=crop",
+    meta: "Srinagar Car Rental",
+    icon: Car,
+  },
+  {
+    href: "/blog/sinthan-top-road-trip-guide",
+    title: "Sinthan Top Road Trip Guide: Route, Weather & Things to Know",
+    description:
+      "Plan a Sinthan Top road trip via Kokernag and Daksum, with weather guidance, the best time to visit, and self-drive tips.",
+    image: "/Images/sinthan_top.jpg",
+    meta: "Sinthan Top Road Trip",
+    icon: Mountain,
+  },
+  {
+    href: "/blog/gurez-valley-road-trip-guide",
+    title: "Gurez Valley Road Trip Guide: Route, Distance, Best Time & Travel Tips",
+    description:
+      "Plan a Gurez Valley road trip from Srinagar with the route via Bandipora and Razdan Pass, best time to visit, and essential travel tips.",
+    image: "/Images/gurez.webp",
+    meta: "Gurez Valley Road Trip",
+    icon: Mountain,
+  },
+  {
+    href: "/blog/doodhpathri-travel-guide",
+    title: "Doodhpathri Travel Guide: How to Reach, Things to Do & Best Time",
+    description:
+      "Explore Doodhpathri, Kashmir's Valley of Milk. Find the best time to visit, how to reach from Srinagar, things to do, and self-drive travel tips.",
+    image:
+      "/Images/doodhpathri.jpg",
+    meta: "Doodhpathri Travel Guide",
+    icon: Mountain,
+  },
+  {
     href: "/blog/srinagar-to-leh-self-drive-ultimate-guide",
     title: "Srinagar to Leh Road Trip: The Ultimate Guide",
     description:
@@ -40,7 +76,7 @@ const posts = [
     description:
       "Explore the best Kashmir self drive routes, including Gulmarg, Pahalgam, Sonamarg, Gurez, Doodhpathri, and more scenic road trips.",
     image:
-      "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop",
+      "/Images/dal_lake.jpg",
     meta: "Kashmir Self Drive",
     icon: MapPin,
   },
@@ -60,7 +96,7 @@ const posts = [
     description:
       "Plan your scenic self-drive journey from Srinagar to Gulmarg with route details, best time to visit, attractions, and practical driving tips.",
     image:
-      "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
+      "/Images/gulmarg.jpg",
     meta: "Gulmarg Road Trip",
     icon: Mountain,
   },
@@ -80,7 +116,7 @@ const posts = [
     description:
       "Compare self-drive rentals and taxis in Kashmir — privacy, cost, flexibility, and which option suits different travelers.",
     image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+      "/Images/selfdrive.jpg",
     meta: "Travel Advice",
     icon: ShieldCheck,
   },
@@ -90,7 +126,7 @@ const posts = [
     description:
       "Planning a Srinagar to Pahalgam road trip? Discover distance, route, attractions, driving tips, and why a self-drive car is ideal.",
     image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop",
+      "/Images/pahalgam.jpeg",
     meta: "Pahalgam Road Trip",
     icon: Mountain,
   },
@@ -100,7 +136,7 @@ const posts = [
     description:
       "Planning a Srinagar to Sonamarg road trip? Discover the best route, distance, attractions, driving tips, and why a self-drive car is ideal.",
     image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+      "/Images/sonamrg.avif",
     meta: "Sonamarg Road Trip",
     icon: Mountain,
   },
@@ -120,11 +156,34 @@ const posts = [
     description:
       "Rent self-drive cars in Kashmir and explore Srinagar, Gulmarg, Pahalgam, Sonamarg, and Ladakh with routes, vehicle tips, and itineraries.",
     image:
-      "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=1200&auto=format&fit=crop",
+      "/Images/kashmir.jpg",
     meta: "Car Rental Guide",
     icon: KeyRound,
   },
 ];
+
+const postOrder = [
+  "/blog/srinagar-to-leh-self-drive-ultimate-guide",
+  "/blog/kashmir-self-drive-car-rental-ladakh-guide",
+  "/blog/why-book-self-steer-kashmir",
+  "/blog/srinagar-airport-car-rental",
+  "/blog/self-drive-vs-taxi",
+  "/blog/car-rental-in-srinagar",
+  "/blog/kashmir-self-drive-routes",
+  "/blog/complete-kashmir-travel-itinerary",
+  "/blog/kashmir-to-ladakh-road-trip-guide",
+  "/blog/srinagar-to-gulmarg-road-trip-guide",
+  "/blog/srinagar-to-pahalgam-road-trip-guide",
+  "/blog/srinagar-to-sonamarg-road-trip-guide",
+  "/blog/doodhpathri-travel-guide",
+  "/blog/gurez-valley-road-trip-guide",
+  "/blog/sinthan-top-road-trip-guide",
+  "/blog/why-visit-kashmir",
+];
+
+const orderedPosts = postOrder
+  .map((href) => posts.find((post) => post.href === href))
+  .filter((post): post is (typeof posts)[number] => Boolean(post));
 
 export default function BlogIndex() {
   return (
@@ -154,7 +213,7 @@ export default function BlogIndex() {
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {posts.map((post, index) => {
+          {orderedPosts.map((post, index) => {
             const Icon = post.icon;
 
             return (
@@ -177,6 +236,7 @@ export default function BlogIndex() {
                         target.onerror = null;
                         target.src = "/Images/jeep.webp";
                       }}
+                      style={post.href === "/blog/self-drive-vs-taxi" ? { objectPosition: "center 80%" } : undefined}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/10 to-transparent" />

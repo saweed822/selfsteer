@@ -16,7 +16,7 @@ export default function SrinagarToPahalgamGuide() {
         <section className="relative overflow-hidden border-b border-slate-200 bg-slate-950 text-white">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?q=80&w=1920&auto=format&fit=crop"
+              src="/Images/pahalgam.jpeg"
               alt="Scenic Pahalgam valley road in Kashmir"
               loading="lazy"
               decoding="async"
