@@ -15,7 +15,7 @@ export default function Cars() {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <Seo
-        title="Kashmir Self-Drive Car Rentals"
+        title="Self Drive Car Rental Srinagar,Kashmir"
         description="Find premium self-drive car rentals for Kashmir with SUVs, hatchbacks, and comfortable vehicles for valley tours and scenic mountain drives."
         path="/cars"
       />
