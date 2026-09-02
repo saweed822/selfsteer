@@ -17,7 +17,7 @@ export default function LadakhCars() {
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
       <Seo
-        title="Self Drive Car Rental Leh Ladakh | Self Steer Kashmir"
+        title="Self Drive Car Rental Leh Ladakh"
         description="Rent premium self-drive cars for Ladakh with high-clearance SUVs, rugged support, and routes tailored for Srinagar-Leh, Pangong Lake, and Nubra Valley."
         path="/cars/ladakh"
       />
