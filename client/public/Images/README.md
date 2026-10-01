@@ -1,8 +1,7 @@
 This folder contains branding assets for the site.
 
-The favicon uses `favicon-source.png`, a square crop of the supplied Self Steer
-logo with only excess black space removed. The older `favicon.svg` is not used
-for the favicon.
+The favicon uses `favicon-source.png`, copied from the supplied `../favi_con.png`
+Self Steer logo. The older `favicon.svg` is not used for the favicon.
 
 How to regenerate PNG and ICO files from the source logo:
 
